@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://j101510.github.io/pocketfinlab/sitemap.xml
