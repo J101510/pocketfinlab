@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K-패스 vs 기후동행카드 환급률·손익분기점 비교: 월 탑승 횟수·광역버스·GTX 이용 패턴별 유리한 교통카드 계산법 | 포켓핀랩 (PocketFinLab)</title>
+  <meta name="description" content="국토교통부 K-패스(일반 20%·청년 30%·저소득 53%·다자녀 최대 50% 환급 및 모두의 카드 정액 환급)와 서울시 기후동행카드(무제한 정액권)의 적용 노선 차이, 월 교통비 지출액별 손익분기점, 카드사 추가 10% 할인 결합 공식을 비교합니다.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://pocketfinlab.com/posts/k-pass-vs-climate-card-transport-refund-breakeven.html">
+  <link rel="alternate" type="application/rss+xml" title="포켓핀랩 (PocketFinLab) RSS" href="/rss.xml">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="포켓핀랩 (PocketFinLab)">
+  <meta property="og:title" content="K-패스 vs 기후동행카드 환급률·손익분기점 비교: 월 탑승 횟수·광역버스·GTX 이용 패턴별 유리한 교통카드 계산법 | 포켓핀랩 (PocketFinLab)">
+  <meta property="og:description" content="국토교통부 K-패스(일반 20%·청년 30%·저소득 53%·다자녀 최대 50% 환급 및 모두의 카드 정액 환급)와 서울시 기후동행카드(무제한 정액권)의 적용 노선 차이, 월 교통비 지출액별 손익분기점, 카드사 추가 10% 할인 결합 공식을 비교합니다.">
+  <meta property="og:url" content="https://pocketfinlab.com/posts/k-pass-vs-climate-card-transport-refund-breakeven.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "K-패스 vs 기후동행카드 환급률·손익분기점 비교: 월 탑승 횟수·광역버스·GTX 이용 패턴별 유리한 교통카드 계산법", "description": "국토교통부 K-패스(일반 20%·청년 30%·저소득 53%·다자녀 최대 50% 환급 및 모두의 카드 정액 환급)와 서울시 기후동행카드(무제한 정액권)의 적용 노선 차이, 월 교통비 지출액별 손익분기점, 카드사 추가 10% 할인 결합 공식을 비교합니다.", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/k-pass-vs-climate-card-transport-refund-breakeven.html"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "지원금·청약", "item": "https://pocketfinlab.com/category/policy.html"}, {"@type": "ListItem", "position": 3, "name": "K-패스 vs 기후동행카드 환급률·손익분기점 비교: 월 탑승 횟수·광역버스·GTX 이용 패턴별 유리한 교통카드 계산법", "item": "https://pocketfinlab.com/posts/k-pass-vs-climate-card-transport-refund-breakeven.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "한 달에 대중교통을 15번 미만으로 타면 K-패스 환급금이 아예 0원인가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, K-패스는 매월(1일~말일) 대중교통 이용 횟수가 최소 15회 이상일 때부터 환급이 활성화됩니다(단, 최초 가입한 첫 달에 한해 15회 미만 이용 시에도 예외적으로 적립·환급 인정). 월 15회 미만으로 대중교통을 가끔 이용하는 달에는 일반 교통할인 신용·체크카드 자체 할인만 적용됩니다."}}, {"@type": "Question", "name": "경기도에서 서울로 광역버스(빨간버스)나 GTX-A, 신분당선을 타고 출퇴근하는데 기후동행카드가 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "신분당선과 타 시·도 면허 광역버스, GTX 노선은 기후동행카드 사용이 제한되는 구간이 대부분인 반면, K-패스는 전국 시내·마을버스, 지하철은 물론 신분당선, 광역버스, GTX까지 전 노선에서 제한 없이 20~53% 환급이 적용되므로 광역 통근자는 K-패스가 압도적으로 유리합니다."}}, {"@type": "Question", "name": "K-패스 청년 30% 환급의 만 나이 기준은 어떻게 되며, 기후동행카드 청년권 나이 기준과 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "K-패스 청년 유형은 청년기본법 기준인 '만 19세~34세'까지 30% 환급이 적용되는 반면, 서울시 기후동행카드 청년 할인은 '만 19세~39세'까지 폭넓게 인정됩니다. 따라서 서울 시내 위주로 통근하는 만 35세~39세 직장인은 K-패스에서는 일반(20%)으로 분류되지만 기후동행카드에서는 청년 할인권(월 5만 원대)을 구매할 수 있어 손익분기점이 크게 낮아집니다."}}, {"@type": "Question", "name": "K-패스 환급과 신용·체크카드사 자체 대중교통 10% 청구할인을 동시에 중복으로 받을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 100% 중복 적용됩니다. 정부(국토부·지자체)가 지급하는 K-패스 환급금(20~53%)은 익월 현금 입금 또는 결제대금 차감으로 별도 정산되고, 전월 실적 충족 시 카드사가 제공하는 대중교통 10~15% 청구할인은 카드사 혜택으로 추가 차감되므로 체감 할인율을 30~45% 이상으로 높일 수 있습니다."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge">PFL</span>
+        <span>포켓핀랩 (PocketFinLab)</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html" class="active">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+<article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+  <nav class="breadcrumb" aria-label="경로">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/category/policy.html">지원금·청약</a>
+  </nav>
+  <header class="article-header">
+    <span class="badge">지원금·청약</span>
+    <h1 itemprop="headline">K-패스 vs 기후동행카드 환급률·손익분기점 비교: 월 탑승 횟수·광역버스·GTX 이용 패턴별 유리한 교통카드 계산법</h1>
+    <p class="article-desc" itemprop="description">국토교통부 K-패스(일반 20%·청년 30%·저소득 53%·다자녀 최대 50% 환급 및 모두의 카드 정액 환급)와 서울시 기후동행카드(무제한 정액권)의 적용 노선 차이, 월 교통비 지출액별 손익분기점, 카드사 추가 10% 할인 결합 공식을 비교합니다.</p>
+    <div class="article-byline">
+      <span>작성: 포켓핀랩 에디터팀</span>
+      <time itemprop="datePublished" datetime="2026-10-30">기준일: 2026-10-30</time>
+    </div>
+  </header>
+  
+  <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. K-패스 vs 기후동행카드 핵심 스펙 비교표</a></li><li><a href="#sec-2">2. 월 교통비·횟수별 손익분기점 실전 시뮬레이션</a></li><li class="toc-sub"><a href="#sec-3">① 만 19~34세 청년 (서울 시내 통근 기준)</a></li><li class="toc-sub"><a href="#sec-4">② 만 35~39세 서울 거주 직장인 (&#x27;숨은 역전 구간&#x27;)</a></li><li class="toc-sub"><a href="#sec-5">③ 만 40세 이상 일반 성인</a></li><li><a href="#sec-6">3. 환급액을 한 단계 더 높이는 카드 발급 &amp; 등록 3단계</a></li><li><a href="#sec-7">4. 신청 전 필수 확인 체크리스트</a></li></ol></nav>
+  <div class="article-body" itemprop="articleBody">
+<p>매일 지하철과 버스로 출퇴근·통학하는 직장인과 학생에게 연간 30만~60만 원 이상의 확정 현금 흐름 차이를 만드는 정책이 국토교통부의 <strong>K-패스(경기패스·인천 I-패스 포함)</strong>와 서울시의 <strong>기후동행카드</strong>입니다. 두 제도 모두 대중교통비 부담을 덜어주지만, 하나는 <strong>이용 금액 비례 환급형(사후 페이백)</strong>이고 다른 하나는 <strong>선불·후불 무제한 정액권</strong> 구조라서 본인의 거주지, 탑승 노선(신분당선·광역버스 포함 여부), 월 탑승 횟수, 만 나이에 따라 유불리가 완전히 뒤바뀝니다.</p>
+<p>헷갈리는 두 교통 지원 정책의 적용 범위와 월 교통비 구간별 정확한 <strong>손익분기점(Break-even Point)</strong> 계산 공식을 표로 비교합니다.</p>
+<h2 id="sec-1">1. K-패스 vs 기후동행카드 핵심 스펙 비교표</h2>
+<p>가장 먼저 확인해야 할 관문은 <strong>내가 매일 타는 노선이 해당 카드를 지원하는가</strong>입니다. 아무리 무제한 정액권이 저렴해도 환승 구간 중 단 한 번이라도 미지원 노선(예: 신분당선·경기 광역버스)이 끼어 있으면 별도 요금이 이중 결제되기 때문입니다.</p>
+<div class="table-wrap"><table><thead><tr><th>비교 기준</th><th>국토교통부 K-패스 (경기·인천패스 연계)</th><th>서울시 기후동행카드</th></tr></thead><tbody><tr><td>지원 방식</td><td>월 15회 이상 이용 시 지출액의 <strong>20% ~ 53.3% 사후 환급</strong></td><td>30일간 <strong>무제한 정액권</strong> (선불 충전 또는 후불 기후동행카드)</td></tr><tr><td>적용 지역</td><td><strong>전국 대부분 지자체</strong> 호환</td><td><strong>서울시 시내 구간</strong> + 김포·과천·고양·성남·남양주·구리 등 협약 구간</td></tr><tr><td>신분당선·광역버스·GTX</td><td><strong>전 노선 모두 환급 가능</strong></td><td><strong>사용 불가</strong> (서울 면허 동행버스 등 일부 예외 노선 외 불가)</td></tr><tr><td>일반 성인 혜택</td><td>이용액의 <strong>20%</strong> 환급</td><td>30일권 <strong>62,000원</strong> (따릉이 포함 시 65,000원)</td></tr><tr><td>청년 우대 기준 및 혜택</td><td><strong>만 19~34세</strong> / 이용액의 <strong>30%</strong> 환급</td><td><strong>만 19~39세</strong> / 30일권 <strong>55,000원</strong> (따릉이 포함 58,000원)</td></tr><tr><td>다자녀·저소득층 우대</td><td>다자녀(2자녀 30%, 3자녀 50%), 저소득층 <strong>53.3%</strong> 환급</td><td>다자녀 부모·저소득층 별도 할인권 운영</td></tr><tr><td>월 인정 횟수 상한</td><td>기본 월 최대 60회 (경기패스·인천패스·정액 상한제 연계 시 무제한 확장)</td><td>횟수 제한 완전 무제한</td></tr></tbody></table></div>
+<blockquote><p><strong>지자체 자동 업그레이드 혜택:</strong> 주민등록상 주소지가 경기도나 인천시인 주민이 K-패스 홈페이지·앱에 카드를 등록하면 별도 신청 없이 자동으로 <strong>The 경기패스</strong> 또는 <strong>인천 I-패스</strong> 혜택으로 전환되어 월 60회 횟수 한도가 <strong>무제한</strong>으로 풀리고 청년 인정 연령도 <strong>만 39세</strong>까지 자동 확대됩니다.</p></blockquote>
+<h2 id="sec-2">2. 월 교통비·횟수별 손익분기점 실전 시뮬레이션</h2>
+<p>서울 시내 지하철·시내버스만 이용(1회 기본요금 1,500원 가정)할 때 몇 번 이상 타야 기후동행카드가 K-패스를 역전하는지 연령대별로 계산한 결과입니다.</p>
+<h3 id="sec-3">① 만 19~34세 청년 (서울 시내 통근 기준)</h3>
+<ul><li><strong>월 40회 탑승 (출퇴근 왕복 20일, 월 60,000원 지출):</strong></li><li>K-패스(30% 환급): 60,000원 - 18,000원 환급 = <strong>실부담 42,000원</strong> *(K-패스가 13,000원 유리)*</li><li>기후동행카드 청년권(따릉이 미포함): <strong>55,000원</strong></li><li><strong>월 52회 탑승 (출퇴근 + 주말 외출, 월 78,000원 지출):</strong></li><li>K-패스(30% 환급): 78,000원 - 23,400원 환급 = <strong>실부담 54,600원</strong> *(비슷한 손익분기점 구간)*</li><li>기후동행카드 청년권: <strong>55,000원</strong></li><li><strong>결론:</strong> 만 19~34세 청년은 서울 시내 대중교통을 한 달에 <strong>약 78,600원(약 53회) 미만</strong>으로 탄다면 K-패스(+카드사 10% 추가 할인)가 훨씬 저렴하고, 영업직·외근·주말 약속 등으로 <strong>월 55회~60회 이상</strong> 타거나 공공자전거 따릉이를 매일 환승한다면 기후동행카드가 유리합니다.</li></ul>
+<h3 id="sec-4">② 만 35~39세 서울 거주 직장인 ('숨은 역전 구간')</h3>
+<p>만 35~39세 서울 시민은 K-패스에서는 일반(20% 환급)으로 내려가지만 기후동행카드에서는 여전히 청년권(55,000원) 대상입니다.</p>
+<ul><li><strong>월 46회 탑승 (월 69,000원 지출):</strong></li><li>K-패스 일반(20% 환급): 69,000원 - 13,800원 = <strong>실부담 55,200원</strong></li><li>기후동행카드 청년권: <strong>55,000원</strong></li><li><strong>결론:</strong> 서울 시내로만 이동하는 만 35~39세는 월 <strong>68,750원(약 46회)</strong>만 넘어도 기후동행카드 청년권이 더 유리해집니다.</li></ul>
+<h3 id="sec-5">③ 만 40세 이상 일반 성인</h3>
+<ul><li>K-패스 일반(20% 환급) 기준 실부담액이 기후동행카드 일반권(62,000원)을 넘어서는 지점은 월 대중교통 총 지출액 <strong>77,500원(약 52회 탑승)</strong>입니다. 월 40~48회 수준의 평범한 주 5일 출퇴근 직장인이라면 K-패스가 유리합니다.</li></ul>
+<div class="table-wrap"><table><thead><tr><th>이용자 유형 및 통근 패턴</th><th>최적 선택 카드</th><th>핵심 선택 이유</th></tr></thead><tbody><tr><td>경기·인천 ↔ 서울 광역버스·신분당선·GTX 통근자</td><td><strong>K-패스 (경기·인천패스)</strong></td><td>광역 고액 요금 20~30% 무제한 환급, 미지원 구간 스트레스 0</td></tr><tr><td>주 5일 정시 출퇴근 일반·청년 직장인 (월 36~48회)</td><td><strong>K-패스 체크·신용카드</strong></td><td>실제 탑승한 만큼 비례 환급 + 연휴·휴가 있는 달 손해 없음</td></tr><tr><td>서울 시내 하루 3~4회 이상 외근·주말 다빈도 탑승자</td><td><strong>후불 기후동행카드</strong></td><td>월 7.8만 원 이상 구간부터 초과 요금 전액 무료 효과</td></tr><tr><td>만 35~39세 서울 거주 + 따릉이 매일 이용자</td><td><strong>기후동행카드 청년권(5.8만)</strong></td><td>만 39세까지 청년 요금 인정 + 따릉이 월 3천 원 무제한 결합</td></tr></tbody></table></div>
+<h2 id="sec-6">3. 환급액을 한 단계 더 높이는 카드 발급 &amp; 등록 3단계</h2>
+<p>K-패스의 가장 큰 함정은 <strong>'카드만 발급받아 찍고 다닌다고 자동 환급되지 않는다'</strong>는 점입니다. 반드시 K-패스 공식 앱이나 홈페이지에 카드번호를 등록한 날부터 횟수가 카운트됩니다.</p>
+<ol><li><strong>카드사 자체 할인이 큰 전용 K-패스 카드 선택:</strong> 연회비가 없고 전월 실적 허들(20만~30만 원)이 낮은 주요 시중은행·카드사 <strong>K-패스 체크카드</strong>(대중교통 추가 10% 캐시백 제공 상품 등) 또는 대중교통 10~15% 청구할인 K-패스 신용카드를 먼저 발급받습니다.</li><li><strong>수령 즉시 K-패스 앱 회원가입 및 카드 등록:</strong> 실물 카드(또는 모바일 발급 카드번호)를 받자마자 <strong>K-패스 공식 앱(korea-pass.kr)</strong>에 접속해 카드번호 16자리와 주민등록번호 기반 주소지 검증을 완료합니다. 기초생활수급자·차상위계층이나 다자녀 부모(막내 만 18세 이하 2자녀 이상)는 앱 내 자격 검증 메뉴에서 우대 환급률(30~53.3%)이 정상 활성화되었는지 확인합니다.</li><li><strong>연휴·휴가가 긴 달의 유연한 운용:</strong> 설·추석 명절이나 여름휴가가 끼어 출근 일수가 적은 달에는 선불 정액권(기후동행카드)을 충전하면 손익분기점을 못 채워 손해를 보게 되므로, 해당 월에는 K-패스 카드로 태그하여 탄 만큼만 20~30% 정률 환급을 받는 것이 가장 경제적입니다.</li></ol>
+<h2 id="sec-7">4. 신청 전 필수 확인 체크리스트</h2>
+<ul><li>☐ K-패스 카드를 지갑에 넣기 전 <strong>K-패스 공식 앱에 카드번호 등록 및 주소지 인증</strong>까지 완료했는가? *(미등록 탑승분은 소급 환급 불가)*</li><li>☐ 다자녀 가구(2자녀 30%, 3자녀 이상 50% 환급) 해당자의 경우 앱 내 <strong>[My &gt; 다자녀 정보]</strong> 메뉴에서 실시간 자격 검증을 눌러 우대율을 등록했는가?</li><li>☐ 기후동행카드 이용 시 하차 태그를 누락하면 2회 누적 시 24시간 사용 정지 페널티가 부과되므로 환승·하차 시마다 <strong>하차 태그</strong>를 빠짐없이 찍고 있는가?</li><li>☐ 삼성페이·모바일티머니 등 스마트폰 NFC로 태그할 때 실물 카드 번호가 아닌 <strong>모바일 교통카드 고유 번호</strong>가 K-패스 앱에 정확히 매칭되어 있는가?</li></ul>
+  </div>
+  <section class="faq-section"><h2 id="faq">자주 묻는 질문 (FAQ)</h2><div class="faq-item"><div class="faq-q">Q. 한 달에 대중교통을 15번 미만으로 타면 K-패스 환급금이 아예 0원인가요?</div><p class="faq-a">A. 네, K-패스는 매월(1일~말일) 대중교통 이용 횟수가 최소 15회 이상일 때부터 환급이 활성화됩니다(단, 최초 가입한 첫 달에 한해 15회 미만 이용 시에도 예외적으로 적립·환급 인정). 월 15회 미만으로 대중교통을 가끔 이용하는 달에는 일반 교통할인 신용·체크카드 자체 할인만 적용됩니다.</p></div><div class="faq-item"><div class="faq-q">Q. 경기도에서 서울로 광역버스(빨간버스)나 GTX-A, 신분당선을 타고 출퇴근하는데 기후동행카드가 되나요?</div><p class="faq-a">A. 신분당선과 타 시·도 면허 광역버스, GTX 노선은 기후동행카드 사용이 제한되는 구간이 대부분인 반면, K-패스는 전국 시내·마을버스, 지하철은 물론 신분당선, 광역버스, GTX까지 전 노선에서 제한 없이 20~53% 환급이 적용되므로 광역 통근자는 K-패스가 압도적으로 유리합니다.</p></div><div class="faq-item"><div class="faq-q">Q. K-패스 청년 30% 환급의 만 나이 기준은 어떻게 되며, 기후동행카드 청년권 나이 기준과 다른가요?</div><p class="faq-a">A. K-패스 청년 유형은 청년기본법 기준인 '만 19세~34세'까지 30% 환급이 적용되는 반면, 서울시 기후동행카드 청년 할인은 '만 19세~39세'까지 폭넓게 인정됩니다. 따라서 서울 시내 위주로 통근하는 만 35세~39세 직장인은 K-패스에서는 일반(20%)으로 분류되지만 기후동행카드에서는 청년 할인권(월 5만 원대)을 구매할 수 있어 손익분기점이 크게 낮아집니다.</p></div><div class="faq-item"><div class="faq-q">Q. K-패스 환급과 신용·체크카드사 자체 대중교통 10% 청구할인을 동시에 중복으로 받을 수 있나요?</div><p class="faq-a">A. 네, 100% 중복 적용됩니다. 정부(국토부·지자체)가 지급하는 K-패스 환급금(20~53%)은 익월 현금 입금 또는 결제대금 차감으로 별도 정산되고, 전월 실적 충족 시 카드사가 제공하는 대중교통 10~15% 청구할인은 카드사 혜택으로 추가 차감되므로 체감 할인율을 30~45% 이상으로 높일 수 있습니다.</p></div></section>
+  
+  <div class="tag-list"><span class="tag-chip">#K패스</span><span class="tag-chip">#기후동행카드</span><span class="tag-chip">#대중교통환급</span><span class="tag-chip">#청년교통비지원</span><span class="tag-chip">#교통카드비교</span></div>
+  <p class="disclaimer-box">※ 본 글은 공식 법령·기관 고시 자료를 바탕으로 정리한 일반 정보이며, 개인별 과세·심사 요건에 따라 실제 결과가 달라질 수 있으므로 신청 전 해당 기관의 최신 공고를 반드시 확인하시기 바랍니다.</p>
+  <section class="related-box"><h2>함께 읽으면 좋은 실전 가이드</h2><ul class="related-list"><li><a href="/posts/pension-savings-vs-irp-allocation-tax-credit-formula.html">연금저축펀드 vs IRP 세액공제 900만원 최적 배분 공식: 총급여 5,500만원 기준 148.5만원 환급과 중도인출·수수료 실측 비교</a> <small>(2026-10-30)</small></li><li><a href="/posts/family-gift-tax-exemption-10year-marriage-childbirth-rule.html">가족 간 증여세 면제한도 10년 합산 계산법: 성인 자녀 5천만원과 혼인·출산 1억원 추가 공제 홈택스 신고 가이드</a> <small>(2026-10-30)</small></li><li><a href="/posts/isa-maturity-pension-transfer-tax-credit-formula.html">중개형 ISA 만기 자금 연금저축·IRP 이전 절세 공식: 60일 기한과 최대 300만원 추가 세액공제 활용법</a> <small>(2026-10-29)</small></li><li><a href="/posts/income-tax-5year-refund-claim-guide.html">근로·종합소득세 5년 경정청구 직접 신청법: 중소기업 취업자 90% 감면·월세·부양가족 누락 환급 계산</a> <small>(2026-10-29)</small></li></ul></section>
+</article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/about.html">사이트 소개</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+        <a href="/terms.html">이용약관</a>
+        <a href="/contact.html">문의하기</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap.xml">사이트맵</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 포켓핀랩 (PocketFinLab). 공식 법령·기관 공시 기준의 실전 금융·세무·정책 리서치 정보를 제공합니다.</p>
+    </div>
+  </footer>
+</body>
+</html>
