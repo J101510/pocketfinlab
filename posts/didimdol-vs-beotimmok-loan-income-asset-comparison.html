@@ -17,6 +17,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
   <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "내집마련 디딤돌대출 vs 버팀목 전세대출 소득·순자산 심사 기준 비교: 생애최초·신혼 가구 한도와 우대금리 계산법", "description": "주택도시기금 내집마련 디딤돌대출과 버팀목 전세자금대출의 2026년 가구 유형별 부부합산 소득·순자산 상한선, 생애최초 LTV 적용 한도, 기금e든든 사전 자산심사 부적격 사유와 이의신청 방법을 상세히 비교합니다.", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/didimdol-vs-beotimmok-loan-income-asset-comparison.html"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "지원금·청약", "item": "https://pocketfinlab.com/category/policy.html"}, {"@type": "ListItem", "position": 3, "name": "내집마련 디딤돌대출 vs 버팀목 전세대출 소득·순자산 심사 기준 비교: 생애최초·신혼 가구 한도와 우대금리 계산법", "item": "https://pocketfinlab.com/posts/didimdol-vs-beotimmok-loan-income-asset-comparison.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "부부합산 연소득을 계산할 때 세전 금액 기준인가요, 실수령액 기준인가요?", "acceptedAnswer": {"@type": "Answer", "text": "모든 주택도시기금 대출은 세전 소득 기준입니다. 근로소득자는 근로소득 원천징수영수증상 비과세 소득을 제외한 총급여액(상시근로 소득금액증명원 기준), 사업소득자는 종합소득세 소득금액증명원상 소득금액을 합산해 판정합니다."}}, {"@type": "Question", "name": "육아휴직 중이거나 퇴사 직후라면 소득 산정이 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "신청일 현재 휴직 중인 경우 휴직 직전 1개년(또는 최근 정상 근무 기간 환산) 소득으로 산정하는 것이 원칙이나, 육아휴직 확인서 제출 및 복직 예정 여부에 따라 수탁은행별 세부 증빙 기준이 적용됩니다. 퇴사 후 건강보험 직장가입자 자격상실 확인서가 발급된 무소득 상태라면 무소득 증빙(사실증명원)으로 반영됩니다."}}, {"@type": "Question", "name": "기금e든든 자산심사에서 부적격 판정이 뜨면 계약금을 날리게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "사전 자산심사 부적격 문자 수신일로부터 10영업일 이내에 기금e든든 홈페이지에서 부채 증빙(최근 실행된 신용대출·임차보증금 반환 채무 등 전산 미반영 부채)을 첨부해 1회 이의신청을 할 수 있습니다. 그래도 계약금 보호를 위해 매매·임대차 계약서 특약란에 '정책자금 대출 불가 시 계약금 전액 반환' 문구를 넣거나 가계약 전 기금e든든 조회를 먼저 진행하는 것이 안전합니다."}}, {"@type": "Question", "name": "혼인신고 전 예비 신혼부부도 신혼가구 완화된 소득·한도 기준을 적용받을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 가능합니다. 대출 신청일 기준 혼인 예정자(예식장 계약서 또는 청첩장 증빙)로서 대출 실행일로부터 3개월 이내에 혼인관계증명서를 수탁은행에 제출하는 조건으로 신혼가구 소득 및 한도 기준을 적용받을 수 있습니다."}}]}</script>
@@ -29,7 +30,7 @@
         <span>포켓핀랩 (PocketFinLab)</span>
       </a>
       <nav class="main-nav" aria-label="주요 메뉴">
-        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html" class="active">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/about.html">소개</a>
+        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html" class="active">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
       </nav>
     </div>
   </header>
@@ -50,6 +51,47 @@
   </header>
   
   <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 디딤돌대출 vs 버팀목 전세대출 핵심 자격 비교표</a></li><li><a href="#sec-2">2. 가구 유형별 최대 대출 한도와 LTV·DTI 적용 구조</a></li><li class="toc-sub"><a href="#sec-3">① 내집마련 디딤돌대출 한도 및 LTV</a></li><li class="toc-sub"><a href="#sec-4">② 버팀목 전세자금대출 한도 및 보증 비율</a></li><li><a href="#sec-5">3. 금리 인하를 극대화하는 우대금리 적용 팁</a></li><li><a href="#sec-6">4. 기금e든든 신청 타임라인 및 실수 방지 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-housing_loan" data-calc="housing_loan" aria-label="디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기</h3>
+    <p>가구 유형별 정책대출 상한선과 희망 대출금·금리를 대입해 매월 납입할 원리금(또는 전세 월 이자)을 즉시 시뮬레이션합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>정책대출 및 가구 유형</span>
+          <select name="loan_type">
+            <option value="24000">디딤돌 생애최초 주택구입 (최대 2.4억 / 소득 7천만)</option>
+            <option value="32000">디딤돌 신혼·2자녀 이상 (최대 3.2억 / 소득 8.5천만)</option>
+            <option value="20000">디딤돌 일반 무주택 가구 (최대 2.0억 / 소득 6천만)</option>
+            <option value="20001">청년전용 버팀목 전세대출 (최대 2.0억 / 이자만 납부)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>희망 대출 금액 (만 원)</span>
+          <input type="number" name="principal" value="20000" min="1000" max="50000" step="1000">
+        </label>
+        <label class="calc-field">
+          <span>예상 적용 연 금리 (%)</span>
+          <input type="number" name="rate" value="2.65" min="1.0" max="8.0" step="0.05">
+        </label>
+        <label class="calc-field">
+          <span>상환 기간 및 방식</span>
+          <select name="term">
+            <option value="360">30년 원리금균등 분할상환</option>
+            <option value="240">20년 원리금균등 분할상환</option>
+            <option value="120">10년 원리금균등 분할상환</option>
+            <option value="0">전세 만기일시상환 (월 이자만 납부)</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+</section>
   <div class="article-body" itemprop="articleBody">
 <p>무주택 실수요자가 시중은행 일반 주택담보대출이나 전세대출을 알아보기 전 가장 먼저 자격을 대조해야 할 상품이 주택도시기금의 <strong>내집마련 디딤돌대출(매매용)</strong>과 <strong>버팀목 전세자금대출(임차용)</strong>입니다. 시중 금리 대비 1.0~2.0%p 이상 낮은 정책 금리가 적용될 뿐 아니라, 디딤돌대출의 경우 중도상환수수료 부담도 초기 3년 이내 최대 1.2%(일할 차감) 수준으로 낮고 DSR(총부채원리금상환비율) 규제 대신 DTI 60% 기준이 적용되어 체감 대출 여력이 훨씬 안정적이기 때문입니다.</p>
 <p>다만 일반·생애최초·신혼·2자녀 이상 가구별로 <strong>부부합산 연소득</strong>과 <strong>순자산 상한선</strong>이 촘촘하게 나뉘어 있어, 잔금일 직전 자산심사에서 탈락하는 사례가 적지 않습니다. 2026년 주택도시기금 공시 기준을 바탕으로 두 상품의 핵심 심사 컷오프와 한도 공식을 한눈에 비교합니다.</p>
@@ -81,6 +123,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
         <a href="/about.html">사이트 소개</a>
         <a href="/privacy.html">개인정보처리방침</a>
         <a href="/terms.html">이용약관</a>

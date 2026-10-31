@@ -17,6 +17,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
   <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "파킹통장 vs CMA vs 발행어음 금리·예금자보호 완벽 비교: 5천만원 비상금 굴리기 일복리 이자 실익 계산", "description": "인터넷전문은행 파킹통장(연 2.5~3.2%), 증권사 RP·발행어음형 CMA(연 3.3~3.8%)의 5,000만원 예금자보호 적용 여부와 매일 붙는 일복리 이자 세후 실수령액, 입출금 수수료 차이를 비교합니다.", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/parking-account-vs-cma-promissory-note-comparison.html"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "금융·연금", "item": "https://pocketfinlab.com/category/finance.html"}, {"@type": "ListItem", "position": 3, "name": "파킹통장 vs CMA vs 발행어음 금리·예금자보호 완벽 비교: 5천만원 비상금 굴리기 일복리 이자 실익 계산", "item": "https://pocketfinlab.com/posts/parking-account-vs-cma-promissory-note-comparison.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "CMA 통장과 은행 파킹통장은 매일 이자가 붙는 방식이 서로 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 다릅니다. 증권사 RP형이나 발행어음형 CMA는 매일 자정 기준 잔액에 대해 당일 이자가 계산되어 매일 원금에 합산되는 '진짜 일복리' 구조입니다. 반면 대부분의 은행 파킹통장은 매일 잔액별로 일할 계산된 이자를 한 달에 한 번(매월 셋째 주 토요일 등) 몰아서 입금해 주는 '월복리' 형태가 일반적입니다."}}, {"@type": "Question", "name": "증권사 발행어음형 CMA는 예금자보호가 안 된다는데 위험하지 않나요?", "acceptedAnswer": {"@type": "Answer", "text": "발행어음은 예금보험공사의 5,000만 원 예금자보호 대상은 아닙니다. 하지만 발행어음은 자기자본 4조 원 이상의 초대형 투자은행(한국투자증권, 미래에셋증권, NH투자증권, KB증권 등) 단 4곳에만 금융위원회가 발행을 인가한 초우량 신용 등급(AA+ 이상)의 어음입니다. 증권사 자체가 파산하지 않는 한 원금 손실 위험은 극히 희박합니다."}}, {"@type": "Question", "name": "비상금 5,000만 원을 굴릴 때 가장 추천하는 분산 예치 전략은 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "완벽한 원금 보장과 즉시 이체가 필요한 생활비 1,000만~2,000만 원은 1금융권 인터넷은행 파킹통장(예금자보호 5천만 원 적용)에 넣고, 당장 3~6개월간 쓸 일 없는 유휴 대기자금 3,000만 원은 금리가 0.5~1.0%p 더 높은 대형 증권사 발행어음형 CMA에 예치하는 '하이브리드 분산 전략'이 가장 현명합니다."}}, {"@type": "Question", "name": "파킹통장이나 CMA에서 발생한 이자에도 세금이 원천징수되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 금융상품에서 발생하는 모든 이자수익에 대해서는 소득세 14%와 지방소득세 1.4%를 합산한 총 15.4%의 이자소득세가 원천징수된 후 세후 잔액으로 입금됩니다. 만약 연간 금융소득(이자+배당) 합계가 2,000만 원을 초과하면 금융소득종합과세 대상이 되므로 주의해야 합니다."}}]}</script>
@@ -29,7 +30,7 @@
         <span>포켓핀랩 (PocketFinLab)</span>
       </a>
       <nav class="main-nav" aria-label="주요 메뉴">
-        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html" class="active">금융·연금</a> <a href="/about.html">소개</a>
+        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html" class="active">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
       </nav>
     </div>
   </header>
@@ -50,6 +51,47 @@
   </header>
   
   <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 파킹통장 vs RP형 CMA vs 발행어음형 CMA 핵심 스펙 전격 비교표</a></li><li><a href="#sec-2">2. 5,000만 원 6개월 예치 시 세후 실수령 이자 비교표</a></li><li><a href="#sec-3">3. 목적별 스마트 자금 분산 배치 4단계 가이드</a></li><li><a href="#sec-4">4. 단기 계좌 개설 전 필수 확인 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-savings_interest" data-calc="savings_interest" aria-label="파킹통장·CMA 예치금 &amp; 청년도약·적금 세후 실수령 이자 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>파킹통장·CMA 예치금 &amp; 청년도약·적금 세후 실수령 이자 계산기</h3>
+    <p>목돈 거치(파킹통장·발행어음) 또는 매월 적립(청년도약계좌·적금) 방식과 비과세·일반과세(15.4%) 여부에 따른 세후 만기 수령액을 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>운용 방식</span>
+          <select name="mode">
+            <option value="lump">파킹통장·CMA·예금 (목돈 한 번에 거치)</option>
+            <option value="monthly">정기적금·청년도약계좌 (매월 일정액 적립)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>예치금 또는 월 납입액 (만 원)</span>
+          <input type="number" name="amount" value="3000" min="10" max="500000" step="50">
+        </label>
+        <label class="calc-field">
+          <span>연 금리 / 수익률 (%)</span>
+          <input type="number" name="rate" value="3.40" min="0.1" max="15.0" step="0.1">
+        </label>
+        <label class="calc-field">
+          <span>예치·적립 기간 (개월) & 과세 구분</span>
+          <div class="calc-inline">
+            <input type="number" name="months" value="12" min="1" max="120" step="1">
+            <select name="tax_mode">
+              <option value="0.154">일반과세 (15.4%)</option>
+              <option value="0">비과세 (0% · 청년도약/ISA)</option>
+              <option value="0.095">세금우대 (9.5%)</option>
+            </select>
+          </div>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+</section>
   <div class="article-body" itemprop="articleBody">
 <p>부동산 매매 대금, 전세보증금 반환 자금, 혹은 주식·가상자산 시장 재진입을 기다리는 투자 대기자금 등 수천만 원에 달하는 단기 유휴자금을 일반 시중은행 보통예금 통장(연 0.1% 금리)에 그대로 방치하고 계셨나요?</p>
 <p>단 하루만 맡겨도 매일 쏠쏠한 이자가 붙는 <strong>파킹통장(Parking Account)</strong>과 증권사의 <strong>CMA(자산관리계좌)</strong>를 활용하면, 수시입출금의 편리함을 그대로 누리면서도 연 3% 안팎의 묵직한 이자 수익을 매달 안정적으로 챙길 수 있습니다.</p>
@@ -90,6 +132,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
         <a href="/about.html">사이트 소개</a>
         <a href="/privacy.html">개인정보처리방침</a>
         <a href="/terms.html">이용약관</a>

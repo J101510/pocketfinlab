@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>실시간 세금·연금·대출·증여세 금융 계산기 모음 | 포켓핀랩 (PocketFinLab)</title>
+  <meta name="description" content="연금저축·IRP·ISA 세액공제, 증여세 10년 합산 면제한도, 프리랜서 3.3% 종소세 환급, 5년 경정청구, 디딤돌·버팀목 대출, K-패스 손익분기점, 파킹통장 세후 이자 계산기.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://pocketfinlab.com/tools.html">
+  <link rel="alternate" type="application/rss+xml" title="포켓핀랩 (PocketFinLab) RSS" href="/rss.xml">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="포켓핀랩 (PocketFinLab)">
+  <meta property="og:title" content="실시간 세금·연금·대출·증여세 금융 계산기 모음 | 포켓핀랩 (PocketFinLab)">
+  <meta property="og:description" content="연금저축·IRP·ISA 세액공제, 증여세 10년 합산 면제한도, 프리랜서 3.3% 종소세 환급, 5년 경정청구, 디딤돌·버팀목 대출, K-패스 손익분기점, 파킹통장 세후 이자 계산기.">
+  <meta property="og:url" content="https://pocketfinlab.com/tools.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "포켓핀랩 (PocketFinLab) 세금·연금·대출·증여세 실시간 금융 계산기", "url": "https://pocketfinlab.com/tools.html", "applicationCategory": "FinanceApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge">PFL</span>
+        <span>포켓핀랩 (PocketFinLab)</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/tools.html" class="active">금융 계산기</a> <a href="/about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+<section class="hero">
+  <div class="container">
+    <h1>실시간 세금·연금·대출 금융 계산기</h1>
+    <p>2026년 최신 세법·주택도시기금 고시 기준을 반영한 7종 실전 시뮬레이터입니다. 숫자를 입력하면 서버 전송 없이 브라우저에서 즉시 계산됩니다.</p>
+    <div class="cat-pills"><a class="cat-pill" href="#calc-pension_isa">연금저축·IRP</a><a class="cat-pill" href="#calc-gift_tax">가족</a><a class="cat-pill" href="#calc-freelancer_tax">프리랜서</a><a class="cat-pill" href="#calc-tax_refund">중기</a><a class="cat-pill" href="#calc-housing_loan">디딤돌·버팀목</a><a class="cat-pill" href="#calc-transport_kpass">K-패스</a><a class="cat-pill" href="#calc-savings_interest">파킹통장·CMA</a></div>
+  </div>
+</section>
+<div class="article-wrap">
+  <section class="calc-box" id="calc-pension_isa" data-calc="pension_isa" aria-label="연금저축·IRP + ISA 만기이전 세액공제 환급 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>연금저축·IRP + ISA 만기이전 세액공제 환급 계산기</h3>
+    <p>연간 납입액과 ISA 만기 전환금을 입력하면 올해 연말정산 현금 환급액과 자유 인출(비과세) 가능 원금을 즉시 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>총급여(종합소득) 구간</span>
+          <select name="bracket">
+            <option value="0.165">총급여 5,500만 이하 (종합소득 4,500만 이하) · 16.5%</option>
+            <option value="0.132">총급여 5,500만 초과 (종합소득 4,500만 초과) · 13.2%</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>연금저축 납입액 (만 원)</span>
+          <input type="number" name="pension" value="600" min="0" max="1800" step="50">
+        </label>
+        <label class="calc-field">
+          <span>IRP 납입액 (만 원)</span>
+          <input type="number" name="irp" value="300" min="0" max="1800" step="50">
+        </label>
+        <label class="calc-field">
+          <span>ISA 만기 연금전환 입금액 (만 원)</span>
+          <input type="number" name="isa" value="3000" min="0" max="20000" step="100">
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  
+</section>
+<section class="calc-box" id="calc-gift_tax" data-calc="gift_tax" aria-label="가족 간 증여세 면제한도(10년 합산) &amp; 예상 세액 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>가족 간 증여세 면제한도(10년 합산) &amp; 예상 세액 계산기</h3>
+    <p>증여자 관계, 혼인·출산 추가 공제(1억 원), 사전 증여액을 반영해 3개월 내 자진신고(3% 공제) 시 최종 증여세를 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>수증자 기준 증여자 관계</span>
+          <select name="relation">
+            <option value="5000">직계존속 → 성인 자녀·손자녀 (기본 5,000만)</option>
+            <option value="2000">직계존속 → 미성년 자녀·손자녀 (기본 2,000만)</option>
+            <option value="60000">배우자 간 증여 (기본 6억)</option>
+            <option value="1000">기타친족·사위·며느리·형제 (기본 1,000만)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>혼인·출산 추가 공제 (직계존속 증여 시)</span>
+          <select name="marriage">
+            <option value="0">미적용 (일반 증여)</option>
+            <option value="10000">적용 (+1억 원 추가 공제)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>이번 증여 금액 (만 원)</span>
+          <input type="number" name="current_gift" value="15000" min="0" max="1000000" step="500">
+        </label>
+        <label class="calc-field">
+          <span>최근 10년 내 동일 그룹 사전 증여액 (만 원)</span>
+          <input type="number" name="prior_gift" value="0" min="0" max="1000000" step="500">
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  
+</section>
+<section class="calc-box" id="calc-freelancer_tax" data-calc="freelancer_tax" aria-label="프리랜서 3.3% 원천징수 vs 단순·기준경비율 환급액 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>프리랜서 3.3% 원천징수 vs 단순·기준경비율 환급액 계산기</h3>
+    <p>연간 세전 수입과 경비율 유형을 입력하면 이미 뗀 3.3% 세금 대비 5월 종합소득세 예상 환급(또는 추가 납부) 세액을 추산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>연간 3.3% 세전 총수입 (만 원)</span>
+          <input type="number" name="gross" value="2200" min="0" max="50000" step="100">
+        </label>
+        <label class="calc-field">
+          <span>적용 경비율 유형</span>
+          <select name="exp_rate">
+            <option value="0.641">일반 프리랜서·IT·작가 단순경비율 (약 64.1%)</option>
+            <option value="0.794">배달·운송·일부 용역 단순경비율 (약 79.4%)</option>
+            <option value="0.426">기준경비율·추계신고 보수적 기준 (약 42.6%)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>인적공제·국민연금 등 소득공제 합계 (만 원)</span>
+          <input type="number" name="deduct" value="250" min="150" max="10000" step="50">
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  
+</section>
+<section class="calc-box" id="calc-tax_refund" data-calc="tax_refund" aria-label="중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기</h3>
+    <p>연말정산 때 놓친 중소기업 취업자 소득세 감면 또는 무주택 월세 세액공제의 소급 환급 예상액(지방소득세 10% 포함)을 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>누락된 경정청구 항목</span>
+          <select name="refund_type">
+            <option value="sme90">중소기업 취업 청년 90% 감면 (연 200만 한도)</option>
+            <option value="sme70">중기 고령자·장애인·경단녀 70% 감면 (연 200만 한도)</option>
+            <option value="rent17">월세 세액공제 17% (총급여 5,500만 이하)</option>
+            <option value="rent15">월세 세액공제 15% (총급여 5,500만~8,000만)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>연간 결정소득세(감면 시) 또는 연간 월세합계 (만 원)</span>
+          <input type="number" name="base_amt" value="180" min="0" max="10000" step="10">
+        </label>
+        <label class="calc-field">
+          <span>소급 청구 연수 (최대 5년)</span>
+          <select name="years">
+            <option value="1">1년 치</option>
+            <option value="2">2년 치</option>
+            <option value="3" selected>3년 치</option>
+            <option value="4">4년 치</option>
+            <option value="5">5년 치</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  
+</section>
+<section class="calc-box" id="calc-housing_loan" data-calc="housing_loan" aria-label="디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기</h3>
+    <p>가구 유형별 정책대출 상한선과 희망 대출금·금리를 대입해 매월 납입할 원리금(또는 전세 월 이자)을 즉시 시뮬레이션합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>정책대출 및 가구 유형</span>
+          <select name="loan_type">
+            <option value="24000">디딤돌 생애최초 주택구입 (최대 2.4억 / 소득 7천만)</option>
+            <option value="32000">디딤돌 신혼·2자녀 이상 (최대 3.2억 / 소득 8.5천만)</option>
+            <option value="20000">디딤돌 일반 무주택 가구 (최대 2.0억 / 소득 6천만)</option>
+            <option value="20001">청년전용 버팀목 전세대출 (최대 2.0억 / 이자만 납부)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>희망 대출 금액 (만 원)</span>
+          <input type="number" name="principal" value="20000" min="1000" max="50000" step="1000">
+        </label>
+        <label class="calc-field">
+          <span>예상 적용 연 금리 (%)</span>
+          <input type="number" name="rate" value="2.65" min="1.0" max="8.0" step="0.05">
+        </label>
+        <label class="calc-field">
+          <span>상환 기간 및 방식</span>
+          <select name="term">
+            <option value="360">30년 원리금균등 분할상환</option>
+            <option value="240">20년 원리금균등 분할상환</option>
+            <option value="120">10년 원리금균등 분할상환</option>
+            <option value="0">전세 만기일시상환 (월 이자만 납부)</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  
+</section>
+<section class="calc-box" id="calc-transport_kpass" data-calc="transport_kpass" aria-label="K-패스 vs 기후동행카드 월 실부담액·손익분기점 비교 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>K-패스 vs 기후동행카드 월 실부담액·손익분기점 비교 계산기</h3>
+    <p>연령대, 월 대중교통 탑승 횟수, 1회 평균 요금을 입력하면 K-패스와 기후동행카드 중 매월 얼마가 더 저렴한지 즉시 판정합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>연령 및 우대 유형</span>
+          <select name="user_type">
+            <option value="youth">청년 만 19~34세 (K-패스 30% / 기후동행 5.5만)</option>
+            <option value="seoul3539">서울 만 35~39세 (K-패스 20% / 기후동행 5.5만)</option>
+            <option value="adult">일반 성인 만 40세+ (K-패스 20% / 기후동행 6.2만)</option>
+            <option value="lowinc">저소득층 우대 (K-패스 53.3% 환급)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>월 대중교통 이용 횟수 (회)</span>
+          <input type="number" name="rides" value="44" min="0" max="150" step="2">
+        </label>
+        <label class="calc-field">
+          <span>1회 평균 교통요금 (원)</span>
+          <input type="number" name="fare" value="1550" min="1000" max="5000" step="50">
+        </label>
+        <label class="calc-field">
+          <span>신분당선·광역버스·GTX 포함 여부</span>
+          <select name="wide">
+            <option value="no">미포함 (서울 시내 지하철·버스 위주)</option>
+            <option value="yes">포함 (광역버스·신분당선·GTX 통근)</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  
+</section>
+<section class="calc-box" id="calc-savings_interest" data-calc="savings_interest" aria-label="파킹통장·CMA 예치금 &amp; 청년도약·적금 세후 실수령 이자 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>파킹통장·CMA 예치금 &amp; 청년도약·적금 세후 실수령 이자 계산기</h3>
+    <p>목돈 거치(파킹통장·발행어음) 또는 매월 적립(청년도약계좌·적금) 방식과 비과세·일반과세(15.4%) 여부에 따른 세후 만기 수령액을 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>운용 방식</span>
+          <select name="mode">
+            <option value="lump">파킹통장·CMA·예금 (목돈 한 번에 거치)</option>
+            <option value="monthly">정기적금·청년도약계좌 (매월 일정액 적립)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>예치금 또는 월 납입액 (만 원)</span>
+          <input type="number" name="amount" value="3000" min="10" max="500000" step="50">
+        </label>
+        <label class="calc-field">
+          <span>연 금리 / 수익률 (%)</span>
+          <input type="number" name="rate" value="3.40" min="0.1" max="15.0" step="0.1">
+        </label>
+        <label class="calc-field">
+          <span>예치·적립 기간 (개월) & 과세 구분</span>
+          <div class="calc-inline">
+            <input type="number" name="months" value="12" min="1" max="120" step="1">
+            <select name="tax_mode">
+              <option value="0.154">일반과세 (15.4%)</option>
+              <option value="0">비과세 (0% · 청년도약/ISA)</option>
+              <option value="0.095">세금우대 (9.5%)</option>
+            </select>
+          </div>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  
+</section>
+  <p class="disclaimer-box">※ 본 계산기 결과는 현행 세법 및 공공기관 공시 기준을 바탕으로 한 모의 시뮬레이션 추정치이며, 개인별 세부 공제 요건에 따라 실제 결정세액·대출한도와 차이가 있을 수 있습니다.</p>
+</div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
+        <a href="/about.html">사이트 소개</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+        <a href="/terms.html">이용약관</a>
+        <a href="/contact.html">문의하기</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap.xml">사이트맵</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 포켓핀랩 (PocketFinLab). 공식 법령·기관 공시 기준의 실전 금융·세무·정책 리서치 정보를 제공합니다.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -17,6 +17,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
   <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "근로·종합소득세 5년 경정청구 직접 신청법: 중소기업 취업자 90% 감면·월세·부양가족 누락 환급 계산", "description": "연말정산이나 종합소득세 신고 때 놓친 중소기업 취업자 소득세 감면(연 200만원 한도), 월세 세액공제, 따로 사는 부모님 부양가족 공제를 수수료 없이 홈택스 경정청구로 5년 치 소급 환급받는 절차와 기한을 정리합니다.", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/income-tax-5year-refund-claim-guide.html"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "세금·환급", "item": "https://pocketfinlab.com/category/tax.html"}, {"@type": "ListItem", "position": 3, "name": "근로·종합소득세 5년 경정청구 직접 신청법: 중소기업 취업자 90% 감면·월세·부양가족 누락 환급 계산", "item": "https://pocketfinlab.com/posts/income-tax-5year-refund-claim-guide.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "경정청구를 직접 신청하면 현재 다니는 회사에 연락이 가거나 불이익이 생기나요?", "acceptedAnswer": {"@type": "Answer", "text": "전혀 통보되지 않습니다. 경정청구는 법정신고기한 이후 납세자 개인이 관할 세무서에 직접 과다 납부 세액의 환급을 청구하는 절차이므로 회사 경리팀을 거치지 않으며, 환급금도 본인이 입력한 개인 계좌로 직접 입금됩니다."}}, {"@type": "Question", "name": "이직을 여러 번 했는데 이전 직장 재직 기간도 중소기업 취업자 소득세 감면을 소급받을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 가능합니다. 최초 감면 요건을 충족한 취업일로부터 5년(청년 기준) 이내에 감면 대상 중소기업에 재직했다면, 퇴사한 이전 직장에서 감면신청서를 받아 현 직장 또는 관할 세무서에 제출한 뒤 연도별 경정청구를 진행할 수 있습니다."}}, {"@type": "Question", "name": "결정세액이 0원이었던 해에도 공제 항목을 추가해 경정청구를 하면 환급금이 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "나오지 않습니다. 경정청구는 이미 납부(결정)된 소득세를 한도로 돌려주는 제도이므로, 근로소득 원천징수영수증 72번 항목인 '결정세액'이 0원인 귀속 연도는 추가로 환급받을 세액 자체가 없습니다."}}, {"@type": "Question", "name": "홈택스 경정청구 접수 후 실제 통장에 환급금이 입금되기까지 얼마나 걸리나요?", "acceptedAnswer": {"@type": "Answer", "text": "국세기본법상 관할 세무서는 경정청구를 받은 날로부터 2개월 이내에 처리 결과를 통지해야 합니다. 실무적으로는 서류 보완이 없는 경우 평균 3주에서 6주 사이에 본인 계좌로 국세 및 지방소득세(국세 환급액의 10%)가 순차 입금됩니다."}}]}</script>
@@ -29,7 +30,7 @@
         <span>포켓핀랩 (PocketFinLab)</span>
       </a>
       <nav class="main-nav" aria-label="주요 메뉴">
-        <a href="/">홈</a> <a href="/category/tax.html" class="active">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/about.html">소개</a>
+        <a href="/">홈</a> <a href="/category/tax.html" class="active">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
       </nav>
     </div>
   </header>
@@ -50,6 +51,44 @@
   </header>
   
   <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 귀속 연도별 경정청구 마감 기한 계산 공식</a></li><li><a href="#sec-2">2. 환급액이 가장 크게 발생하는 3대 누락 항목</a></li><li class="toc-sub"><a href="#sec-3">① 중소기업 취업자 소득세 감면 (조세특례제한법 제30조)</a></li><li class="toc-sub"><a href="#sec-4">② 무주택 직장인 월세 세액공제</a></li><li class="toc-sub"><a href="#sec-5">③ 주거 형편상 따로 사는 부모님·조부모님 부양가족 기본공제</a></li><li><a href="#sec-6">3. 홈택스 수수료 0원 직접 경정청구 5단계 절차</a></li><li><a href="#sec-7">4. 반려·가산세 위험을 막는 사전 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-tax_refund" data-calc="tax_refund" aria-label="중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기</h3>
+    <p>연말정산 때 놓친 중소기업 취업자 소득세 감면 또는 무주택 월세 세액공제의 소급 환급 예상액(지방소득세 10% 포함)을 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>누락된 경정청구 항목</span>
+          <select name="refund_type">
+            <option value="sme90">중소기업 취업 청년 90% 감면 (연 200만 한도)</option>
+            <option value="sme70">중기 고령자·장애인·경단녀 70% 감면 (연 200만 한도)</option>
+            <option value="rent17">월세 세액공제 17% (총급여 5,500만 이하)</option>
+            <option value="rent15">월세 세액공제 15% (총급여 5,500만~8,000만)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>연간 결정소득세(감면 시) 또는 연간 월세합계 (만 원)</span>
+          <input type="number" name="base_amt" value="180" min="0" max="10000" step="10">
+        </label>
+        <label class="calc-field">
+          <span>소급 청구 연수 (최대 5년)</span>
+          <select name="years">
+            <option value="1">1년 치</option>
+            <option value="2">2년 치</option>
+            <option value="3" selected>3년 치</option>
+            <option value="4">4년 치</option>
+            <option value="5">5년 치</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+</section>
   <div class="article-body" itemprop="articleBody">
 <p>연말정산이나 5월 종합소득세 확정신고가 끝난 뒤 뒤늦게 누락된 공제 항목을 발견하더라도 포기할 필요가 없습니다. <strong>국세기본법 제45조의2</strong>에 따라 법정신고기한이 지난 후 <strong>5년 이내</strong>라면 언제든 관할 세무서장에게 과다 납부한 세금을 돌려달라고 청구하는 <strong>경정청구(更正請求)</strong> 권리가 보장되기 때문입니다.</p>
 <p>특히 민간 환급 대행 플랫폼을 이용하면 환급액의 10~20%를 이용 수수료로 지불해야 하지만, 국세청 <strong>홈택스(PC)</strong>를 이용하면 단 1원의 수수료 없이 15분 만에 본인이 직접 신청할 수 있습니다. 아래에서 환급 단가가 가장 큰 3대 누락 항목과 귀속 연도별 마감 기한, 홈택스 입력 동선을 차례대로 검증합니다.</p>
@@ -85,6 +124,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
         <a href="/about.html">사이트 소개</a>
         <a href="/privacy.html">개인정보처리방침</a>
         <a href="/terms.html">이용약관</a>

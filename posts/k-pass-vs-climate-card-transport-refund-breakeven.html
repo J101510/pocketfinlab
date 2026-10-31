@@ -17,6 +17,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
   <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "K-패스 vs 기후동행카드 환급률·손익분기점 비교: 월 탑승 횟수·광역버스·GTX 이용 패턴별 유리한 교통카드 계산법", "description": "국토교통부 K-패스(일반 20%·청년 30%·저소득 53%·다자녀 최대 50% 환급 및 모두의 카드 정액 환급)와 서울시 기후동행카드(무제한 정액권)의 적용 노선 차이, 월 교통비 지출액별 손익분기점, 카드사 추가 10% 할인 결합 공식을 비교합니다.", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/k-pass-vs-climate-card-transport-refund-breakeven.html"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "지원금·청약", "item": "https://pocketfinlab.com/category/policy.html"}, {"@type": "ListItem", "position": 3, "name": "K-패스 vs 기후동행카드 환급률·손익분기점 비교: 월 탑승 횟수·광역버스·GTX 이용 패턴별 유리한 교통카드 계산법", "item": "https://pocketfinlab.com/posts/k-pass-vs-climate-card-transport-refund-breakeven.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "한 달에 대중교통을 15번 미만으로 타면 K-패스 환급금이 아예 0원인가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, K-패스는 매월(1일~말일) 대중교통 이용 횟수가 최소 15회 이상일 때부터 환급이 활성화됩니다(단, 최초 가입한 첫 달에 한해 15회 미만 이용 시에도 예외적으로 적립·환급 인정). 월 15회 미만으로 대중교통을 가끔 이용하는 달에는 일반 교통할인 신용·체크카드 자체 할인만 적용됩니다."}}, {"@type": "Question", "name": "경기도에서 서울로 광역버스(빨간버스)나 GTX-A, 신분당선을 타고 출퇴근하는데 기후동행카드가 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "신분당선과 타 시·도 면허 광역버스, GTX 노선은 기후동행카드 사용이 제한되는 구간이 대부분인 반면, K-패스는 전국 시내·마을버스, 지하철은 물론 신분당선, 광역버스, GTX까지 전 노선에서 제한 없이 20~53% 환급이 적용되므로 광역 통근자는 K-패스가 압도적으로 유리합니다."}}, {"@type": "Question", "name": "K-패스 청년 30% 환급의 만 나이 기준은 어떻게 되며, 기후동행카드 청년권 나이 기준과 다른가요?", "acceptedAnswer": {"@type": "Answer", "text": "K-패스 청년 유형은 청년기본법 기준인 '만 19세~34세'까지 30% 환급이 적용되는 반면, 서울시 기후동행카드 청년 할인은 '만 19세~39세'까지 폭넓게 인정됩니다. 따라서 서울 시내 위주로 통근하는 만 35세~39세 직장인은 K-패스에서는 일반(20%)으로 분류되지만 기후동행카드에서는 청년 할인권(월 5만 원대)을 구매할 수 있어 손익분기점이 크게 낮아집니다."}}, {"@type": "Question", "name": "K-패스 환급과 신용·체크카드사 자체 대중교통 10% 청구할인을 동시에 중복으로 받을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 100% 중복 적용됩니다. 정부(국토부·지자체)가 지급하는 K-패스 환급금(20~53%)은 익월 현금 입금 또는 결제대금 차감으로 별도 정산되고, 전월 실적 충족 시 카드사가 제공하는 대중교통 10~15% 청구할인은 카드사 혜택으로 추가 차감되므로 체감 할인율을 30~45% 이상으로 높일 수 있습니다."}}]}</script>
@@ -29,7 +30,7 @@
         <span>포켓핀랩 (PocketFinLab)</span>
       </a>
       <nav class="main-nav" aria-label="주요 메뉴">
-        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html" class="active">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/about.html">소개</a>
+        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html" class="active">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
       </nav>
     </div>
   </header>
@@ -50,6 +51,45 @@
   </header>
   
   <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. K-패스 vs 기후동행카드 핵심 스펙 비교표</a></li><li><a href="#sec-2">2. 월 교통비·횟수별 손익분기점 실전 시뮬레이션</a></li><li class="toc-sub"><a href="#sec-3">① 만 19~34세 청년 (서울 시내 통근 기준)</a></li><li class="toc-sub"><a href="#sec-4">② 만 35~39세 서울 거주 직장인 (&#x27;숨은 역전 구간&#x27;)</a></li><li class="toc-sub"><a href="#sec-5">③ 만 40세 이상 일반 성인</a></li><li><a href="#sec-6">3. 환급액을 한 단계 더 높이는 카드 발급 &amp; 등록 3단계</a></li><li><a href="#sec-7">4. 신청 전 필수 확인 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-transport_kpass" data-calc="transport_kpass" aria-label="K-패스 vs 기후동행카드 월 실부담액·손익분기점 비교 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>K-패스 vs 기후동행카드 월 실부담액·손익분기점 비교 계산기</h3>
+    <p>연령대, 월 대중교통 탑승 횟수, 1회 평균 요금을 입력하면 K-패스와 기후동행카드 중 매월 얼마가 더 저렴한지 즉시 판정합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>연령 및 우대 유형</span>
+          <select name="user_type">
+            <option value="youth">청년 만 19~34세 (K-패스 30% / 기후동행 5.5만)</option>
+            <option value="seoul3539">서울 만 35~39세 (K-패스 20% / 기후동행 5.5만)</option>
+            <option value="adult">일반 성인 만 40세+ (K-패스 20% / 기후동행 6.2만)</option>
+            <option value="lowinc">저소득층 우대 (K-패스 53.3% 환급)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>월 대중교통 이용 횟수 (회)</span>
+          <input type="number" name="rides" value="44" min="0" max="150" step="2">
+        </label>
+        <label class="calc-field">
+          <span>1회 평균 교통요금 (원)</span>
+          <input type="number" name="fare" value="1550" min="1000" max="5000" step="50">
+        </label>
+        <label class="calc-field">
+          <span>신분당선·광역버스·GTX 포함 여부</span>
+          <select name="wide">
+            <option value="no">미포함 (서울 시내 지하철·버스 위주)</option>
+            <option value="yes">포함 (광역버스·신분당선·GTX 통근)</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+</section>
   <div class="article-body" itemprop="articleBody">
 <p>매일 지하철과 버스로 출퇴근·통학하는 직장인과 학생에게 연간 30만~60만 원 이상의 확정 현금 흐름 차이를 만드는 정책이 국토교통부의 <strong>K-패스(경기패스·인천 I-패스 포함)</strong>와 서울시의 <strong>기후동행카드</strong>입니다. 두 제도 모두 대중교통비 부담을 덜어주지만, 하나는 <strong>이용 금액 비례 환급형(사후 페이백)</strong>이고 다른 하나는 <strong>선불·후불 무제한 정액권</strong> 구조라서 본인의 거주지, 탑승 노선(신분당선·광역버스 포함 여부), 월 탑승 횟수, 만 나이에 따라 유불리가 완전히 뒤바뀝니다.</p>
 <p>헷갈리는 두 교통 지원 정책의 적용 범위와 월 교통비 구간별 정확한 <strong>손익분기점(Break-even Point)</strong> 계산 공식을 표로 비교합니다.</p>
@@ -83,6 +123,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
         <a href="/about.html">사이트 소개</a>
         <a href="/privacy.html">개인정보처리방침</a>
         <a href="/terms.html">이용약관</a>
