@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 해외주식 양도소득세 250만원 기본공제 및 손익통산 계산법: 미국주식 22% 분리과세와 이동평균법 vs 선입선출법 환차익 절세 공식 | 포켓핀랩 (PocketFinLab)</title>
+  <meta name="description" content="서학개미를 위한 2026년 해외주식 양도소득세의 연간 250만원 기본공제, 국내·해외 손익통산 결제일 기준 산출 공식, 증권사별 단가 산정 방식(이동평균법 vs 선입선출법)에 따른 세액 차이 및 5월 홈택스 22% 확정신고 절세 전략을 정밀 해설합니다.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://pocketfinlab.com/posts/overseas-stock-capital-gains-tax-calculation.html">
+  <link rel="alternate" type="application/rss+xml" title="포켓핀랩 (PocketFinLab) RSS" href="/rss.xml">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="포켓핀랩 (PocketFinLab)">
+  <meta property="og:title" content="2026년 해외주식 양도소득세 250만원 기본공제 및 손익통산 계산법: 미국주식 22% 분리과세와 이동평균법 vs 선입선출법 환차익 절세 공식 | 포켓핀랩 (PocketFinLab)">
+  <meta property="og:description" content="서학개미를 위한 2026년 해외주식 양도소득세의 연간 250만원 기본공제, 국내·해외 손익통산 결제일 기준 산출 공식, 증권사별 단가 산정 방식(이동평균법 vs 선입선출법)에 따른 세액 차이 및 5월 홈택스 22% 확정신고 절세 전략을 정밀 해설합니다.">
+  <meta property="og:url" content="https://pocketfinlab.com/posts/overseas-stock-capital-gains-tax-calculation.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "2026년 해외주식 양도소득세 250만원 기본공제 및 손익통산 계산법: 미국주식 22% 분리과세와 이동평균법 vs 선입선출법 환차익 절세 공식", "description": "서학개미를 위한 2026년 해외주식 양도소득세의 연간 250만원 기본공제, 국내·해외 손익통산 결제일 기준 산출 공식, 증권사별 단가 산정 방식(이동평균법 vs 선입선출법)에 따른 세액 차이 및 5월 홈택스 22% 확정신고 절세 전략을 정밀 해설합니다.", "datePublished": "2026-11-02", "dateModified": "2026-11-02", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/overseas-stock-capital-gains-tax-calculation.html"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "세금·환급", "item": "https://pocketfinlab.com/category/tax.html"}, {"@type": "ListItem", "position": 3, "name": "2026년 해외주식 양도소득세 250만원 기본공제 및 손익통산 계산법: 미국주식 22% 분리과세와 이동평균법 vs 선입선출법 환차익 절세 공식", "item": "https://pocketfinlab.com/posts/overseas-stock-capital-gains-tax-calculation.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "미국 주식으로 1,000만원 벌고 국내 주식으로 500만원 손실을 봤다면 손익통산이 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 소득세법 개정에 따라 국내 주식(대주주 양도분 및 장외거래 등 과세 대상)과 해외 주식의 양도손익은 동일 과세기간(1월 1일~12월 31일) 내에서 전액 합산 통산됩니다. 따라서 해외 주식 이익 1,000만 원에서 국내 주식 과세 손실 500만 원을 차감한 500만 원이 순이익이 되며, 여기에 기본공제 250만 원을 빼면 실제 250만 원에 대해서만 22%(55만 원)의 양도소득세를 납부하게 됩니다."}}, {"@type": "Question", "name": "주식을 매도하지 않고 계좌에 보유만 하고 있어도 평가차익에 대해 세금이 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "그렇지 않습니다. 주식 양도소득세는 '실현손익(매도 결제가 완료된 수익)'에 대해서만 부과되는 거래세 성격의 소득세입니다. 계좌 평가금액이 아무리 수억 원 상승했더라도 실제 매도 버튼을 눌러 결제(T+1일 또는 T+2일)가 체결되지 않은 미실현 평가이익에는 단 1원의 세금도 과세되지 않습니다."}}, {"@type": "Question", "name": "배우자에게 미국 주식을 증여한 뒤 매도하면 양도소득세를 100% 아낄 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "배우자 증여재산공제(10년 합산 6억 원)를 활용해 취득가액을 높인 뒤 매도하는 방식은 널리 쓰여온 절세법이지만, 세법 개정으로 주식 양도소득세에도 '이월과세 1년 규정'이 신설되었습니다. 따라서 배우자에게 주식을 증여한 후 반드시 '1년 이상 보유'한 뒤 매도해야 수증 당시의 증여가액(평가액)을 취득가액으로 인정받을 수 있으며, 1년 이내에 조기 매도할 경우 당초 증여자의 취득가액으로 소급 과세되므로 각별히 주의하셔야 합니다."}}, {"@type": "Question", "name": "연간 양도차익이 250만원 이하인 경우에도 국세청에 반드시 신고해야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "양도차익이 기본공제 250만 원 이하인 경우 납부할 세액은 '0원'이므로 세금 납부 의무는 발생하지 않습니다. 하지만 소득세법상 과세미달자라도 양도소득 과세표준 예정·확정신고서를 제출하는 것이 원칙입니다. 특히 국세청 전산에 증권사 통보 자료와 오차가 생겨 소명 안내문이 발송되는 번거로움을 피하기 위해 홈택스에서 과세표준 0원으로 간편 신고를 완료해 두시는 것을 권장합니다."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge">PFL</span>
+        <span>포켓핀랩 (PocketFinLab)</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="/">홈</a> <a href="/category/tax.html" class="active">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+<article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+  <nav class="breadcrumb" aria-label="경로">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/category/tax.html">세금·환급</a>
+  </nav>
+  <header class="article-header">
+    <span class="badge">세금·환급</span>
+    <h1 itemprop="headline">2026년 해외주식 양도소득세 250만원 기본공제 및 손익통산 계산법: 미국주식 22% 분리과세와 이동평균법 vs 선입선출법 환차익 절세 공식</h1>
+    <p class="article-desc" itemprop="description">서학개미를 위한 2026년 해외주식 양도소득세의 연간 250만원 기본공제, 국내·해외 손익통산 결제일 기준 산출 공식, 증권사별 단가 산정 방식(이동평균법 vs 선입선출법)에 따른 세액 차이 및 5월 홈택스 22% 확정신고 절세 전략을 정밀 해설합니다.</p>
+    <div class="article-byline">
+      <span>작성: 포켓핀랩 에디터팀</span>
+      <time itemprop="datePublished" datetime="2026-11-02">기준일: 2026-11-02</time>
+    </div>
+  </header>
+  
+  <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 미국 직투 해외주식 vs 국내 상장 해외 ETF 과세 체계 비교표</a></li><li><a href="#sec-2">2. 증권사 단가 산정 방식(선입선출법 vs 이동평균법) 세액 차이 비교표</a></li><li><a href="#sec-3">3. 국세청 홈택스 해외주식 양도소득세 5분 확정신고 4단계 순서</a></li><li><a href="#sec-4">4. 연말 해외주식 절세 전 필수 점검 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-tax_refund" data-calc="tax_refund" aria-label="중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기</h3>
+    <p>연말정산 때 놓친 중소기업 취업자 소득세 감면 또는 무주택 월세 세액공제의 소급 환급 예상액(지방소득세 10% 포함)을 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>누락된 경정청구 항목</span>
+          <select name="refund_type">
+            <option value="sme90">중소기업 취업 청년 90% 감면 (연 200만 한도)</option>
+            <option value="sme70">중기 고령자·장애인·경단녀 70% 감면 (연 200만 한도)</option>
+            <option value="rent17">월세 세액공제 17% (총급여 5,500만 이하)</option>
+            <option value="rent15">월세 세액공제 15% (총급여 5,500만~8,000만)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>연간 결정소득세(감면 시) 또는 연간 월세합계 (만 원)</span>
+          <input type="number" name="base_amt" value="180" min="0" max="10000" step="10">
+        </label>
+        <label class="calc-field">
+          <span>소급 청구 연수 (최대 5년)</span>
+          <select name="years">
+            <option value="1">1년 치</option>
+            <option value="2">2년 치</option>
+            <option value="3" selected>3년 치</option>
+            <option value="4">4년 치</option>
+            <option value="5">5년 치</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+</section>
+  <div class="article-body" itemprop="articleBody">
+<p>미국 뉴욕증시와 나스닥 시장의 빅테크 기업(애플, 엔비디아, 마이크로소프트 등)에 직접 투자하는 이른바 '서학개미' 투자자들의 자산 규모가 급증하면서, 매년 5월 종합소득세 및 양도소득세 신고 기간을 앞두고 세금 폭탄을 피하기 위한 손익 관리 전략이 초미의 관심사로 떠오르고 있습니다.</p>
+<p>많은 서학개미들이 '미국 주식 세금은 그냥 증권사에서 대행신고 문자가 오면 알아서 처리해 주겠지'라고 방심했다가, 여러 증권사에 분산된 계좌의 손익 통산 누락, 환차익 반영 오류, 혹은 기본공제 250만 원 미활용으로 수백만 원의 세금을 과다 납부하거나 가산세를 무는 피해를 겪곤 합니다.</p>
+<blockquote><p>소득세법 제94조 및 제104조에 따르면 거주자가 당해 연도(1월 1일 ~ 12월 31일) 동안 매도 결제한 해외주식의 양도차익은 다른 종합소득(근로·사업·이자배당소득)과 합산되지 않는 '분류과세' 대상이며, 양도소득세율 20%와 지방소득세 2%를 합산한 <strong>단일 세율 22%</strong>가 적용됩니다.</p></blockquote>
+<p>특히 해외주식 양도소득세는 인별로 매년 <strong>'250만 원의 기본공제'</strong>가 부여되므로, 수익이 난 종목과 마이너스 손실 중인 종목을 같은 해 12월 말 결제일 전에 적절히 매도 및 재매수하여 순이익을 250만 원 이하로 맞추면 합법적으로 세금을 0원으로 만들 수 있습니다.</p>
+<p>국내 상장 해외 ETF와의 세금 차이, 증권사별 단가 산정 방식(이동평균법 vs 선입선출법)에 따른 절세 실익, 그리고 홈택스를 통한 확정신고 4단계 순서를 정밀하게 분석합니다.</p>
+<h2 id="sec-1">1. 미국 직투 해외주식 vs 국내 상장 해외 ETF 과세 체계 비교표</h2>
+<p>투자 방식에 따른 세목, 세율, 금융소득종합과세 합산 여부 비교표입니다.</p>
+<div class="table-wrap"><table><thead><tr><th>비교 분석 항목</th><th>미국 직투 해외주식 (나스닥·NYSE 개별주 및 ETF)</th><th>국내 상장 해외 ETF (TIGER, KODEX 미국나스닥 등)</th></tr></thead><tbody><tr><td>적용 세목 및 세율</td><td>양도소득세 <strong>22%</strong> (소득세 20% + 지방세 2%)</td><td>배당소득세 <strong>15.4%</strong> (소득세 14% + 지방세 1.4%)</td></tr><tr><td>연간 기본공제 한도</td><td><strong>연 250만 원 비과세 공제</strong></td><td>기본공제 없음 (수익 전액 15.4% 원천징수)</td></tr><tr><td>과세 방식 구분</td><td><strong>분류과세</strong> (근로·사업소득과 완전 분리 종결)</td><td><strong>종합과세 합산</strong> (연간 금융소득 2,000만원 초과 시)</td></tr><tr><td>종목 간 손익통산</td><td>가능 (A종목 이익 + B종목 손실 상계 처리)</td><td>불가 (계좌 내 ETF 간 손익 상계 없이 이익분마다 과세)</td></tr><tr><td>달러 환차익 과세</td><td>환차익 포함하여 원화 환산 양도차익 과세</td><td>원화 ETF 가격에 환율 반영되어 배당세율 적용</td></tr><tr><td>절세 계좌 활용 여부</td><td>일반 위탁계좌에서만 거래 가능 (ISA/IRP 불가)</td><td>ISA 계좌, 연금저축펀드, IRP에서 비과세·과세이연 운용</td></tr></tbody></table></div>
+<p>대규모 자금을 굴리는 고소득 자산가의 경우 국내 상장 ETF에서 2,000만 원 이상의 매매차익이 발생하면 금융소득종합과세 대상자로 지정되어 최고 49.5%의 누진세율을 맞을 수 있습니다. 반면 미국 직투 주식은 수익이 수억 원이 나더라도 22% 단일 세율로 세금 의무가 완전히 끝나므로 세후 수익률 측면에서 절대적으로 유리합니다.</p>
+<h2 id="sec-2">2. 증권사 단가 산정 방식(선입선출법 vs 이동평균법) 세액 차이 비교표</h2>
+<p>동일한 종목을 여러 차례 분할 매수한 경우 적용 방식에 따른 실현 손익 분석표입니다.</p>
+<div class="table-wrap"><table><thead><tr><th>구분 기준 항목</th><th>선입선출법 (First-In First-Out)</th><th>이동평균법 (Moving Average)</th></tr></thead><tbody><tr><td>매수 단가 적용 원리</td><td>과거에 먼저 산 주식의 가격부터 차례로 매도 적용</td><td>보유 중인 전체 주식의 평균 매수 단가 적용</td></tr><tr><td>주가 우상향 시 세금</td><td>과거 저점 매수 주식이 매도되어 <strong>양도차익 증가 ➔ 세금 증가</strong></td><td>평균 단가가 높아져 <strong>양도차익 축소 ➔ 당해 세금 절감</strong></td></tr><tr><td>주가 우하향 시 세금</td><td>과거 고점 매수 주식이 매도되어 <strong>양도손실 발생 ➔ 세금 절감</strong></td><td>평균 단가 적용으로 손실 폭이 분산됨</td></tr><tr><td>주요 적용 증권사</td><td>키움증권, 미래에셋증권 등 기본 설정 선택 가능</td><td>토스증권, KB증권 등 다수 국내 증권사 기본 적용</td></tr><tr><td>절세 행동 전략</td><td>장기 상승한 우량주는 이동평균법 적용 증권사가 단기 세부담 완화에 유리</td><td>단, 국세청 최종 신고 시 증권사 제공 내역과 통일성 유지 필수</td></tr></tbody></table></div>
+<p>예를 들어 테슬라 주식을 100달러에 10주, 이후 200달러에 10주 매수하여 평균 단가가 150달러인 상태에서 현재가 250달러에 10주를 매도할 때, 선입선출법은 주당 이익 150달러(총 1,500달러)가 잡히지만 이동평균법은 주당 이익 100달러(총 1,000달러)만 과세표준으로 잡혀 당해 연도 세금을 30% 이상 합법적으로 줄일 수 있습니다.</p>
+<h2 id="sec-3">3. 국세청 홈택스 해외주식 양도소득세 5분 확정신고 4단계 순서</h2>
+<p>증권사 대행 신청을 놓쳤거나 복수 증권사를 이용할 때 직접 끝내는 절차입니다.</p>
+<p>Step 1. 거래 중인 각 증권사 HTS/MTS에서 '해외주식 양도소득세 과세자료 조회' 메뉴 진입 후 엑셀 다운로드</p>
+<p>Step 2. 국세청 홈택스(hometax.go.kr) 로그인 후 상단 [세금신고] &gt; [양도소득세] &gt; [해외주식 확정신고] 선택</p>
+<p>Step 3. 증권사별 엑셀 파일 업로드 또는 기본공제 250만 원 입력 후 복수 계좌 합산 순이익 과세표준 확인</p>
+<p>Step 4. 산출세액(20%) 및 지방소득세(2%) 금액 확인 후 가상계좌 또는 카드 납부 (위택스를 통해 지방세 동시 신고)</p>
+<h2 id="sec-4">4. 연말 해외주식 절세 전 필수 점검 체크리스트</h2>
+<ul><li>☐ 올해 1월 1일부터 현재까지 실현된 미국 주식 양도차익 합계가 250만 원을 초과했나요?</li></ul>
+<ul><li>☐ 마이너스 수익률로 물려있는 손실 종목을 연말(12월 28일경) 결제일 전에 매도하여 손익을 상계하셨나요?</li></ul>
+<ul><li>☐ 미국 주식 매도 대금의 환율 계산이 거래일이 아닌 '결제일(T+1일)' 서울외국환중개 기준환율로 적용되었나요?</li></ul>
+<ul><li>☐ 토스증권, 키움증권, 미래에셋 등 2개 이상의 증권사를 이용 중이라면 합산 대행신고를 신청하셨나요?</li></ul>
+<ul><li>☐ 배우자 증여 후 매도 시 신설된 1년 보유 의무(이월과세) 요건을 엄격히 충족하고 계신가요?</li></ul>
+<p>해외주식 양도소득세는 12월 31일까지 결제가 끝난 거래만 그해 세금으로 확정되므로, 미국 현지 결제 시차(T+1영업일)를 감안해 최소 12월 마지막 거래일 2영업일 전까지 손익 상계 매매를 끝내는 것이 절세의 핵심입니다. 매년 250만 원 비과세 한도를 100% 챙겨 장기 복리 수익률을 극대화하시기 바랍니다.</p>
+  </div>
+  <section class="faq-section"><h2 id="faq">자주 묻는 질문 (FAQ)</h2><div class="faq-item"><div class="faq-q">Q. 미국 주식으로 1,000만원 벌고 국내 주식으로 500만원 손실을 봤다면 손익통산이 가능한가요?</div><p class="faq-a">A. 네, 소득세법 개정에 따라 국내 주식(대주주 양도분 및 장외거래 등 과세 대상)과 해외 주식의 양도손익은 동일 과세기간(1월 1일~12월 31일) 내에서 전액 합산 통산됩니다. 따라서 해외 주식 이익 1,000만 원에서 국내 주식 과세 손실 500만 원을 차감한 500만 원이 순이익이 되며, 여기에 기본공제 250만 원을 빼면 실제 250만 원에 대해서만 22%(55만 원)의 양도소득세를 납부하게 됩니다.</p></div><div class="faq-item"><div class="faq-q">Q. 주식을 매도하지 않고 계좌에 보유만 하고 있어도 평가차익에 대해 세금이 나오나요?</div><p class="faq-a">A. 그렇지 않습니다. 주식 양도소득세는 '실현손익(매도 결제가 완료된 수익)'에 대해서만 부과되는 거래세 성격의 소득세입니다. 계좌 평가금액이 아무리 수억 원 상승했더라도 실제 매도 버튼을 눌러 결제(T+1일 또는 T+2일)가 체결되지 않은 미실현 평가이익에는 단 1원의 세금도 과세되지 않습니다.</p></div><div class="faq-item"><div class="faq-q">Q. 배우자에게 미국 주식을 증여한 뒤 매도하면 양도소득세를 100% 아낄 수 있나요?</div><p class="faq-a">A. 배우자 증여재산공제(10년 합산 6억 원)를 활용해 취득가액을 높인 뒤 매도하는 방식은 널리 쓰여온 절세법이지만, 세법 개정으로 주식 양도소득세에도 '이월과세 1년 규정'이 신설되었습니다. 따라서 배우자에게 주식을 증여한 후 반드시 '1년 이상 보유'한 뒤 매도해야 수증 당시의 증여가액(평가액)을 취득가액으로 인정받을 수 있으며, 1년 이내에 조기 매도할 경우 당초 증여자의 취득가액으로 소급 과세되므로 각별히 주의하셔야 합니다.</p></div><div class="faq-item"><div class="faq-q">Q. 연간 양도차익이 250만원 이하인 경우에도 국세청에 반드시 신고해야 하나요?</div><p class="faq-a">A. 양도차익이 기본공제 250만 원 이하인 경우 납부할 세액은 '0원'이므로 세금 납부 의무는 발생하지 않습니다. 하지만 소득세법상 과세미달자라도 양도소득 과세표준 예정·확정신고서를 제출하는 것이 원칙입니다. 특히 국세청 전산에 증권사 통보 자료와 오차가 생겨 소명 안내문이 발송되는 번거로움을 피하기 위해 홈택스에서 과세표준 0원으로 간편 신고를 완료해 두시는 것을 권장합니다.</p></div></section>
+  
+  <div class="tag-list"><span class="tag-chip">#해외주식양도소득세</span><span class="tag-chip">#미국주식세금</span><span class="tag-chip">#해외주식손익통산</span><span class="tag-chip">#해외주식기본공제</span><span class="tag-chip">#양도소득세22%</span></div>
+  <p class="disclaimer-box">※ 본 글은 공식 법령·기관 고시 자료를 바탕으로 정리한 일반 정보이며, 개인별 과세·심사 요건에 따라 실제 결과가 달라질 수 있으므로 신청 전 해당 기관의 최신 공고를 반드시 확인하시기 바랍니다.</p>
+  <section class="related-box"><h2>함께 읽으면 좋은 실전 가이드</h2><ul class="related-list"><li><a href="/posts/us-treasury-etf-vs-dollar-promissory-note-comparison.html">2026년 미국 국채 ETF vs 달러 발행어음 금리·환헤지(H) 비교: 금리 인하 사이클 속 TLT 듀레이션 변동성과 달러 예금 세후 수익률 정밀 분석</a> <small>(2026-11-02)</small></li><li><a href="/posts/parental-allowance-child-benefit-payment-criteria.html">2026년 부모급여·아동수당 지급액 및 소급 신청 기준: 0세 월 100만원·1세 월 50만원 가정양육 vs 어린이집 보육료 바우처 전환 차액 정밀 계산</a> <small>(2026-11-02)</small></li><li><a href="/posts/stress-dsr-stage-mortgage-loan-limit-calculation.html">2026년 주택담보대출 스트레스 DSR 2단계·3단계 한도 축소 계산법: 수도권 1.2%p 가산금리 적용 시 대출 가능 금액 시뮬레이션과 혼합형·주기형 고정금리 절세 실익</a> <small>(2026-11-01)</small></li><li><a href="/posts/national-employment-support-job-seeking-allowance.html">2026 국민취업지원제도 1유형 구직촉진수당 vs 2유형 취업지원서비스 완벽 비교: 월 50만원씩 6개월 수급 요건과 소득·재산 심사 기준 총정리</a> <small>(2026-11-01)</small></li></ul></section>
+</article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
+        <a href="/about.html">사이트 소개</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+        <a href="/terms.html">이용약관</a>
+        <a href="/contact.html">문의하기</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap.xml">사이트맵</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 포켓핀랩 (PocketFinLab). 공식 법령·기관 공시 기준의 실전 금융·세무·정책 리서치 정보를 제공합니다.</p>
+    </div>
+  </footer>
+</body>
+</html>
