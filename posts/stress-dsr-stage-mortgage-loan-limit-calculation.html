@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 주택담보대출 스트레스 DSR 2단계·3단계 한도 축소 계산법: 수도권 1.2%p 가산금리 적용 시 대출 가능 금액 시뮬레이션과 혼합형·주기형 고정금리 절세 실익 | 포켓핀랩 (PocketFinLab)</title>
+  <meta name="description" content="금융위원회 2단계 및 3단계 스트레스 DSR(총부채원리금상환비율) 시행에 따른 수도권 주택담보대출 가산금리(1.2%p) 반영 원리와 연봉 5천만원·1억원 직장인의 대출 가능 한도 축소액(수천만원) 비교, 변동금리 대비 혼합형·주기형 금리의 한도 방어 공식을 분석합니다.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://pocketfinlab.com/posts/stress-dsr-stage-mortgage-loan-limit-calculation.html">
+  <link rel="alternate" type="application/rss+xml" title="포켓핀랩 (PocketFinLab) RSS" href="/rss.xml">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="포켓핀랩 (PocketFinLab)">
+  <meta property="og:title" content="2026년 주택담보대출 스트레스 DSR 2단계·3단계 한도 축소 계산법: 수도권 1.2%p 가산금리 적용 시 대출 가능 금액 시뮬레이션과 혼합형·주기형 고정금리 절세 실익 | 포켓핀랩 (PocketFinLab)">
+  <meta property="og:description" content="금융위원회 2단계 및 3단계 스트레스 DSR(총부채원리금상환비율) 시행에 따른 수도권 주택담보대출 가산금리(1.2%p) 반영 원리와 연봉 5천만원·1억원 직장인의 대출 가능 한도 축소액(수천만원) 비교, 변동금리 대비 혼합형·주기형 금리의 한도 방어 공식을 분석합니다.">
+  <meta property="og:url" content="https://pocketfinlab.com/posts/stress-dsr-stage-mortgage-loan-limit-calculation.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "2026년 주택담보대출 스트레스 DSR 2단계·3단계 한도 축소 계산법: 수도권 1.2%p 가산금리 적용 시 대출 가능 금액 시뮬레이션과 혼합형·주기형 고정금리 절세 실익", "description": "금융위원회 2단계 및 3단계 스트레스 DSR(총부채원리금상환비율) 시행에 따른 수도권 주택담보대출 가산금리(1.2%p) 반영 원리와 연봉 5천만원·1억원 직장인의 대출 가능 한도 축소액(수천만원) 비교, 변동금리 대비 혼합형·주기형 금리의 한도 방어 공식을 분석합니다.", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/stress-dsr-stage-mortgage-loan-limit-calculation.html"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "금융·연금", "item": "https://pocketfinlab.com/category/finance.html"}, {"@type": "ListItem", "position": 3, "name": "2026년 주택담보대출 스트레스 DSR 2단계·3단계 한도 축소 계산법: 수도권 1.2%p 가산금리 적용 시 대출 가능 금액 시뮬레이션과 혼합형·주기형 고정금리 절세 실익", "item": "https://pocketfinlab.com/posts/stress-dsr-stage-mortgage-loan-limit-calculation.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "스트레스 DSR이란 무엇이며 실제 대출자가 내는 이자 금리도 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "그렇지 않습니다. 스트레스 DSR은 실제 매월 지불하는 대출 이자를 올리는 제도가 아닙니다. 대출 심사 단계에서 향후 금리 인상 위험을 미리 반영하기 위해 '가상의 가산금리(스트레스 금리)'를 원리금 상환액 계산식에만 덧붙여 대출 한도를 깎아내는 '대출 한도 규제' 시스템입니다. 실제 통장에서 빠져나가는 이자는 계약한 실행 금리 기준으로만 납부합니다."}}, {"@type": "Question", "name": "수도권과 비수도권(지방) 아파트의 스트레스 금리 차이는 얼마인가요?", "acceptedAnswer": {"@type": "Answer", "text": "가계부채 억제 대책에 따라 비수도권 주택담보대출에는 기본 스트레스 금리인 0.75%p가 가산되지만, 서울·경기·인천 등 수도권 주택담보대출에는 1.20%p의 상향 가산금리가 차등 적용됩니다. 따라서 동일한 연봉의 직장인이라 하더라도 수도권 아파트를 살 때 대출 한도가 수천만 원 더 크게 축소됩니다."}}, {"@type": "Question", "name": "주기형 고정금리와 혼합형 고정금리 중 대출 한도를 더 많이 받으려면 어떤 것을 선택해야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "'주기형(5년 주기 금리 변동)' 상품이 대출 한도 방어에 가장 유리합니다. 고정금리 유지 기간이 길수록 스트레스 금리 반영 비율이 낮아지기 때문입니다. 변동금리는 가산금리의 100%를 그대로 맞지만, 5년 주기형은 30% 수준만 반영되므로 대출 가능 한도를 수천만 원 더 확보할 수 있습니다."}}, {"@type": "Question", "name": "디딤돌대출이나 버팀목 전세대출 등 정책서민금융 대출에도 스트레스 DSR이 적용되나요?", "acceptedAnswer": {"@type": "Answer", "text": "적용되지 않습니다. 주택도시기금 재원으로 실행되는 디딤돌대출, 버팀목 전세대출, 신생아 특례대출, 그리고 중도금 집단대출 등은 스트레스 DSR 규제 대상에서 전면 제외되어 기존 DTI 또는 LTV 한도 내에서 온전히 실행 가능합니다."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge">PFL</span>
+        <span>포켓핀랩 (PocketFinLab)</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html" class="active">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+<article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+  <nav class="breadcrumb" aria-label="경로">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/category/finance.html">금융·연금</a>
+  </nav>
+  <header class="article-header">
+    <span class="badge">금융·연금</span>
+    <h1 itemprop="headline">2026년 주택담보대출 스트레스 DSR 2단계·3단계 한도 축소 계산법: 수도권 1.2%p 가산금리 적용 시 대출 가능 금액 시뮬레이션과 혼합형·주기형 고정금리 절세 실익</h1>
+    <p class="article-desc" itemprop="description">금융위원회 2단계 및 3단계 스트레스 DSR(총부채원리금상환비율) 시행에 따른 수도권 주택담보대출 가산금리(1.2%p) 반영 원리와 연봉 5천만원·1억원 직장인의 대출 가능 한도 축소액(수천만원) 비교, 변동금리 대비 혼합형·주기형 금리의 한도 방어 공식을 분석합니다.</p>
+    <div class="article-byline">
+      <span>작성: 포켓핀랩 에디터팀</span>
+      <time itemprop="datePublished" datetime="2026-11-01">기준일: 2026-11-01</time>
+    </div>
+  </header>
+  
+  <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 대출 상품 금리 유형별 스트레스 DSR 가산금리 반영 비율 비교표</a></li><li><a href="#sec-2">2. 연봉 5천만 원·1억 원 직장인 주택담보대출 한도 축소 시뮬레이션 비교표</a></li><li><a href="#sec-3">3. 스트레스 DSR 시대 대출 한도 극대화 실전 4단계 순서</a></li><li><a href="#sec-4">4. 대출 자금 조달 전 필수 점검 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-housing_loan" data-calc="housing_loan" aria-label="디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기</h3>
+    <p>가구 유형별 정책대출 상한선과 희망 대출금·금리를 대입해 매월 납입할 원리금(또는 전세 월 이자)을 즉시 시뮬레이션합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>정책대출 및 가구 유형</span>
+          <select name="loan_type">
+            <option value="24000">디딤돌 생애최초 주택구입 (최대 2.4억 / 소득 7천만)</option>
+            <option value="32000">디딤돌 신혼·2자녀 이상 (최대 3.2억 / 소득 8.5천만)</option>
+            <option value="20000">디딤돌 일반 무주택 가구 (최대 2.0억 / 소득 6천만)</option>
+            <option value="20001">청년전용 버팀목 전세대출 (최대 2.0억 / 이자만 납부)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>희망 대출 금액 (만 원)</span>
+          <input type="number" name="principal" value="20000" min="1000" max="50000" step="1000">
+        </label>
+        <label class="calc-field">
+          <span>예상 적용 연 금리 (%)</span>
+          <input type="number" name="rate" value="2.65" min="1.0" max="8.0" step="0.05">
+        </label>
+        <label class="calc-field">
+          <span>상환 기간 및 방식</span>
+          <select name="term">
+            <option value="360">30년 원리금균등 분할상환</option>
+            <option value="240">20년 원리금균등 분할상환</option>
+            <option value="120">10년 원리금균등 분할상환</option>
+            <option value="0">전세 만기일시상환 (월 이자만 납부)</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+</section>
+  <div class="article-body" itemprop="articleBody">
+<p>수도권에서 내 집 마련을 계획 중인 무주택 실수요자나 갈아타기를 준비하는 1주택자들에게 가장 큰 금융 장벽은 바로 <strong>스트레스 DSR(총부채원리금상환비율) 제도에 따른 대출 한도 축소</strong>입니다.</p>
+<p>과거에는 내 연봉에 법정 DSR 40% 규제만 충족하면 시중은행 변동금리로 5억 원에서 6억 원까지 무난하게 대출이 나왔지만, 정부의 가계대출 억제 대책으로 스트레스 DSR 2단계가 본격 시행되면서 하루아침에 대출 가능 한도가 수천만 원에서 1억 원 가까이 깎여 잔금 마련에 비상이 걸린 매수자가 급증하고 있습니다.</p>
+<blockquote><p>금융위원회 가이드라인에 따르면 스트레스 DSR이란 향후 금리 인상으로 인한 차주의 원리금 상환 부담을 사전 억제하기 위해, DSR 계산 시 실제 대출 금리에 가상의 위험 가산금리(스트레스 금리)를 얹어 상환 능력을 보수적으로 평가하는 규제입니다. 2026년 현재 수도권 주택담보대출에는 기본 0.75%p보다 훨씬 높은 <strong>1.20%p의 수도권 특별 가산금리</strong>가 적용됩니다.</p></blockquote>
+<p>대출 한도가 깎인다고 해서 집 매수를 포기할 필요는 없습니다. 금리 구조를 단순 '변동금리'에서 5년 고정 후 변동되는 '혼합형'이나 5년 단위로 재산정되는 '주기형' 고정금리 상품으로 변경하면, 가산금리 반영 비율이 최대 70%까지 감면되어 대출 한도를 상당 부분 방어할 수 있습니다.</p>
+<p>수도권 스트레스 DSR 가산금리 체계, 연소득별(5천만·1억 원) 대출 한도 실측 시뮬레이션, 그리고 주기형 상품을 활용한 한도 극대화 4단계 전략을 정밀하게 분석합니다.</p>
+<h2 id="sec-1">1. 대출 상품 금리 유형별 스트레스 DSR 가산금리 반영 비율 비교표</h2>
+<p>금리 변동 위험도에 따라 금융위원회가 차등 적용하는 스트레스 금리 산정 체계 비교표입니다.</p>
+<div class="table-wrap"><table><thead><tr><th>대출 금리 운영 방식</th><th>수도권 아파트 가산금리 (1.20%p 기준)</th><th>비수도권 아파트 가산금리 (0.75%p 기준)</th><th>대출 한도 방어율 및 특징</th></tr></thead><tbody><tr><td><strong>순수 변동금리</strong> (6개월 변동)</td><td><strong>1.20%p 전액 반영</strong> (100% 반영)</td><td><strong>0.75%p 전액 반영</strong> (100% 반영)</td><td>가산금리를 전부 맞아 <strong>대출 한도 축소폭이 가장 극심함</strong></td></tr><tr><td><strong>혼합형 금리</strong> (5년 고정 후 변동)</td><td>약 0.72%p 반영 (60% 수준 반영)</td><td>약 0.45%p 반영 (60% 수준 반영)</td><td>초기 5년 고정 혜택으로 대출 한도 일부 방어 가능</td></tr><tr><td><strong>주기형 금리</strong> (5년마다 고정 재설정)</td><td><strong>약 0.36%p 반영</strong> (30% 수준 반영)</td><td><strong>약 0.22%p 반영</strong> (30% 수준 반영)</td><td>스트레스 금리가 30%만 적용되어 <strong>대출 한도를 가장 많이 확보</strong></td></tr><tr><td>순수 고정금리 (30년 만기 고정)</td><td>0.00%p 반영 (0% 전액 면제)</td><td>0.00%p 반영 (0% 전액 면제)</td><td>금리 변동 위험이 없어 스트레스 DSR 적용 전면 면제</td></tr></tbody></table></div>
+<p>은행 대출 심사 시 적용되는 DSR 계산 공식에서 분모는 내 연봉이지만, 분자는 매년 갚아야 할 원리금 상환액입니다.</p>
+<p>변동금리를 선택하면 실제 대출 금리가 4.0%라도 심사 시에는 1.2%p를 더한 5.2%의 금리로 원리금을 계산하므로 매년 상환액이 폭증하여 DSR 40% 한도에 조기 도달하게 됩니다.</p>
+<p>반면 5년 주기형 금리를 선택하면 가산금리가 0.36%p만 반영되어 심사 금리가 4.36%로 낮아지므로 훨씬 더 많은 대출 원금을 빌릴 수 있습니다.</p>
+<h2 id="sec-2">2. 연봉 5천만 원·1억 원 직장인 주택담보대출 한도 축소 시뮬레이션 비교표</h2>
+<p>40년 만기 원리금균등상환, 다른 신용대출이 없는 상태에서의 수도권 아파트 대출 가능 한도 실측표입니다.</p>
+<div class="table-wrap"><table><thead><tr><th>차주 연소득 구간</th><th>스트레스 DSR 적용 전 한도 (기준금리 4.0%)</th><th>수도권 2단계 변동금리 한도 (심사금리 5.2%)</th><th>수도권 2단계 주기형 한도 (심사금리 4.36%)</th><th>상품 선택에 따른 한도 격차</th></tr></thead><tbody><tr><td><strong>연소득 5,000만 원</strong></td><td>약 4억 1,000만 원</td><td>약 3억 5,500만 원 (<strong>-5,500만 원 축소</strong>)</td><td>약 3억 9,000만 원 (-2,000만 원 축소)</td><td>주기형 선택 시 <strong>3,500만 원 한도 복원</strong></td></tr><tr><td><strong>연소득 7,000만 원</strong></td><td>약 5억 7,500만 원</td><td>약 4억 9,800만 원 (<strong>-7,700만 원 축소</strong>)</td><td>약 5억 4,600만 원 (-2,900만 원 축소)</td><td>주기형 선택 시 <strong>4,800만 원 한도 복원</strong></td></tr><tr><td><strong>연소득 1억 원</strong></td><td>약 8억 2,000만 원</td><td>약 7억 1,000만 원 (<strong>-1억 1,000만 원 축소</strong>)</td><td>약 7억 8,000만 원 (-4,000만 원 축소)</td><td>주기형 선택 시 <strong>7,000만 원 한도 복원</strong></td></tr></tbody></table></div>
+<p>연봉 1억 원을 버는 대기업 직장인이 수도권 아파트를 살 때 변동금리를 고집하면 대출 한도가 종전보다 무려 1억 1,000만 원이나 깎이게 됩니다.</p>
+<p>하지만 은행 상담 창구에서 5년 주기형 상품을 선택하는 순간 대출 한도가 7,000만 원이나 되살아나 대출 가능액이 7억 8,000만 원까지 올라가므로 잔금 부족 사태를 완벽하게 해결할 수 있습니다.</p>
+<h2 id="sec-3">3. 스트레스 DSR 시대 대출 한도 극대화 실전 4단계 순서</h2>
+<p>계약서 작성 전 자금 조달 계획을 안전하게 확정 짓는 행동 프로세스입니다.</p>
+<p>Step 1. 금융소비자 정보포털 파인(fine.fss.or.kr) 또는 시중은행 앱의 'DSR 계산기' 실행</p>
+<p>Step 2. 기존에 보유 중인 마이너스통장, 자동차 할부, 카드론 등 신용대출 한도를 최대한 상환하거나 한도 해지 (기존 부채가 DSR을 갉아먹는 주범)</p>
+<p>Step 3. 주택담보대출 상품 선택 시 변동금리가 아닌 5년 고정 '주기형' 또는 '혼합형' 상품 선택</p>
+<p>Step 4. 대출 만기를 30년에서 40년으로 최장 연장하여 연간 원리금 상환 부담액을 낮춰 최종 승인 한도 극대화</p>
+<h2 id="sec-4">4. 대출 자금 조달 전 필수 점검 체크리스트</h2>
+<ul><li>☐ 매수하려는 주택이 수도권(서울·경기·인천)에 소재하여 가산금리 1.2%p 대상인지 확인하셨나요?</li></ul>
+<ul><li>☐ 사용하지 않는 마이너스통장 한도가 DSR에 전액 반영되고 있지 않은지 해지하셨나요?</li></ul>
+<ul><li>☐ 변동금리 대신 스트레스 금리 감면 혜택이 큰 5년 주기형 고정금리 상품을 신청하셨나요?</li></ul>
+<ul><li>☐ 만 34세 이하 청년 또는 신혼부부로서 40년 만기 장기 모기지 이용 요건을 갖추셨나요?</li></ul>
+<ul><li>☐ 부부합산 소득 요건이 충족되어 스트레스 DSR이 배제되는 정책 모기지(디딤돌·특례대출) 이용 가능성을 검토하셨나요?</li></ul>
+<p>대출 규제가 복잡해질수록 금융 상품의 구조적 차이를 이해하는 것이 수천만 원의 자금력을 좌우합니다. 스트레스 DSR의 가산금리 감면 공식을 적극 활용하여 차질 없는 내 집 마련을 완수하시기 바랍니다.</p>
+  </div>
+  <section class="faq-section"><h2 id="faq">자주 묻는 질문 (FAQ)</h2><div class="faq-item"><div class="faq-q">Q. 스트레스 DSR이란 무엇이며 실제 대출자가 내는 이자 금리도 올라가나요?</div><p class="faq-a">A. 그렇지 않습니다. 스트레스 DSR은 실제 매월 지불하는 대출 이자를 올리는 제도가 아닙니다. 대출 심사 단계에서 향후 금리 인상 위험을 미리 반영하기 위해 '가상의 가산금리(스트레스 금리)'를 원리금 상환액 계산식에만 덧붙여 대출 한도를 깎아내는 '대출 한도 규제' 시스템입니다. 실제 통장에서 빠져나가는 이자는 계약한 실행 금리 기준으로만 납부합니다.</p></div><div class="faq-item"><div class="faq-q">Q. 수도권과 비수도권(지방) 아파트의 스트레스 금리 차이는 얼마인가요?</div><p class="faq-a">A. 가계부채 억제 대책에 따라 비수도권 주택담보대출에는 기본 스트레스 금리인 0.75%p가 가산되지만, 서울·경기·인천 등 수도권 주택담보대출에는 1.20%p의 상향 가산금리가 차등 적용됩니다. 따라서 동일한 연봉의 직장인이라 하더라도 수도권 아파트를 살 때 대출 한도가 수천만 원 더 크게 축소됩니다.</p></div><div class="faq-item"><div class="faq-q">Q. 주기형 고정금리와 혼합형 고정금리 중 대출 한도를 더 많이 받으려면 어떤 것을 선택해야 하나요?</div><p class="faq-a">A. '주기형(5년 주기 금리 변동)' 상품이 대출 한도 방어에 가장 유리합니다. 고정금리 유지 기간이 길수록 스트레스 금리 반영 비율이 낮아지기 때문입니다. 변동금리는 가산금리의 100%를 그대로 맞지만, 5년 주기형은 30% 수준만 반영되므로 대출 가능 한도를 수천만 원 더 확보할 수 있습니다.</p></div><div class="faq-item"><div class="faq-q">Q. 디딤돌대출이나 버팀목 전세대출 등 정책서민금융 대출에도 스트레스 DSR이 적용되나요?</div><p class="faq-a">A. 적용되지 않습니다. 주택도시기금 재원으로 실행되는 디딤돌대출, 버팀목 전세대출, 신생아 특례대출, 그리고 중도금 집단대출 등은 스트레스 DSR 규제 대상에서 전면 제외되어 기존 DTI 또는 LTV 한도 내에서 온전히 실행 가능합니다.</p></div></section>
+  
+  <div class="tag-list"><span class="tag-chip">#스트레스DSR</span><span class="tag-chip">#주택담보대출한도</span><span class="tag-chip">#DSR계산법</span><span class="tag-chip">#스트레스가산금리</span><span class="tag-chip">#고정금리대출</span></div>
+  <p class="disclaimer-box">※ 본 글은 공식 법령·기관 고시 자료를 바탕으로 정리한 일반 정보이며, 개인별 과세·심사 요건에 따라 실제 결과가 달라질 수 있으므로 신청 전 해당 기관의 최신 공고를 반드시 확인하시기 바랍니다.</p>
+  <section class="related-box"><h2>함께 읽으면 좋은 실전 가이드</h2><ul class="related-list"><li><a href="/posts/national-employment-support-job-seeking-allowance.html">2026 국민취업지원제도 1유형 구직촉진수당 vs 2유형 취업지원서비스 완벽 비교: 월 50만원씩 6개월 수급 요건과 소득·재산 심사 기준 총정리</a> <small>(2026-11-01)</small></li><li><a href="/posts/comprehensive-real-estate-holding-tax-calculation.html">2026년 1주택자·다주택자 종합부동산세 과세표준 및 기본공제액 계산법: 공시가격 12억·9억 공제 기준과 고령자·장기보유 세액공제(최대 80%) 적용 공식</a> <small>(2026-11-01)</small></li><li><a href="/posts/youth-leap-account-matching-expansion-housing-dream-link.html">청년도약계좌 정부기여금 매칭 확대 및 주택드림청약 연계 공식: 만기 5,000만원 목돈과 비과세 이자 실수령액 계산법</a> <small>(2026-10-31)</small></li><li><a href="/posts/parking-account-vs-cma-promissory-note-comparison.html">파킹통장 vs CMA vs 발행어음 금리·예금자보호 완벽 비교: 5천만원 비상금 굴리기 일복리 이자 실익 계산</a> <small>(2026-10-31)</small></li></ul></section>
+</article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
+        <a href="/about.html">사이트 소개</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+        <a href="/terms.html">이용약관</a>
+        <a href="/contact.html">문의하기</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap.xml">사이트맵</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 포켓핀랩 (PocketFinLab). 공식 법령·기관 공시 기준의 실전 금융·세무·정책 리서치 정보를 제공합니다.</p>
+    </div>
+  </footer>
+</body>
+</html>
