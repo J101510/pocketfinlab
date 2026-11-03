@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026년 마이너스 통장 한도대출 vs 일반 건별 신용대출 금리 이자 계산법: 일할 계산 복리 효과와 중도상환수수료 DSR 비교 가이드 | 포켓핀랩 (PocketFinLab)</title>
+  <meta name="description" content="2026년 직장인과 개인 사업자를 위한 마이너스 통장(유동성 한도대출)과 일반 만기일시 건별 신용대출의 금리 스프레드(약 0.3~0.5%p 차이) 원인, 실제 인출 일수 기반 일할 계산 이자 산출 공식, 미사용 한도에 대한 스트레스 DSR 2단계 차감 한도 규제 및 중도상환수수료 유불리 비교를 상세 해설합니다.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://pocketfinlab.com/posts/overdraft-account-vs-credit-loan-interest-calculation-comparison.html">
+  <link rel="alternate" type="application/rss+xml" title="포켓핀랩 (PocketFinLab) RSS" href="/rss.xml">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="포켓핀랩 (PocketFinLab)">
+  <meta property="og:title" content="2026년 마이너스 통장 한도대출 vs 일반 건별 신용대출 금리 이자 계산법: 일할 계산 복리 효과와 중도상환수수료 DSR 비교 가이드 | 포켓핀랩 (PocketFinLab)">
+  <meta property="og:description" content="2026년 직장인과 개인 사업자를 위한 마이너스 통장(유동성 한도대출)과 일반 만기일시 건별 신용대출의 금리 스프레드(약 0.3~0.5%p 차이) 원인, 실제 인출 일수 기반 일할 계산 이자 산출 공식, 미사용 한도에 대한 스트레스 DSR 2단계 차감 한도 규제 및 중도상환수수료 유불리 비교를 상세 해설합니다.">
+  <meta property="og:url" content="https://pocketfinlab.com/posts/overdraft-account-vs-credit-loan-interest-calculation-comparison.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "2026년 마이너스 통장 한도대출 vs 일반 건별 신용대출 금리 이자 계산법: 일할 계산 복리 효과와 중도상환수수료 DSR 비교 가이드", "description": "2026년 직장인과 개인 사업자를 위한 마이너스 통장(유동성 한도대출)과 일반 만기일시 건별 신용대출의 금리 스프레드(약 0.3~0.5%p 차이) 원인, 실제 인출 일수 기반 일할 계산 이자 산출 공식, 미사용 한도에 대한 스트레스 DSR 2단계 차감 한도 규제 및 중도상환수수료 유불리 비교를 상세 해설합니다.", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/overdraft-account-vs-credit-loan-interest-calculation-comparison.html"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "금융·연금", "item": "https://pocketfinlab.com/category/finance.html"}, {"@type": "ListItem", "position": 3, "name": "2026년 마이너스 통장 한도대출 vs 일반 건별 신용대출 금리 이자 계산법: 일할 계산 복리 효과와 중도상환수수료 DSR 비교 가이드", "item": "https://pocketfinlab.com/posts/overdraft-account-vs-credit-loan-interest-calculation-comparison.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "마이너스 통장 금리가 일반 건별 신용대출보다 통상 0.3~0.5%p 더 높은 이유는 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "은행 입장에서 마이너스 통장(한도대출)은 고객이 언제 돈을 빼 쓸지 알 수 없기 때문에 항상 약정된 한도만큼의 대출 준비 자금을 지급준비금 형태로 금고에 묶어두어야 하는 유동성 관리 비용이 발생하기 때문입니다. 반면 건별 신용대출은 대출 실행 즉시 약정 금액 전체가 고객 계좌로 입금되어 은행이 이자 수익을 확정적으로 확보할 수 있으므로, 리스크 프리미엄이 적게 반영되어 금리가 더 낮게 책정됩니다."}}, {"@type": "Question", "name": "마이너스 통장을 개설해 두고 1원도 쓰지 않으면 이자가 전혀 안 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 맞습니다. 마이너스 통장은 개설된 한도 금액이 아니라 매일 자정 기준으로 '실제 마이너스로 꺼내 쓴 잔액'에 대해서만 하루 단위(일할 계산)로 이자가 붙습니다. 따라서 5,000만 원 한도를 뚫어놓고 잔고를 0원 이상으로 유지한다면 1년 내내 대출 이자가 단 1원도 청구되지 않습니다. 다만 대출을 전혀 쓰지 않더라도 DSR 규제 산정 시에는 약정 한도 전액이 대출 잔액으로 잡힌다는 점은 주의해야 합니다."}}, {"@type": "Question", "name": "마이너스 통장 이자가 매월 원금에 가산되어 복리로 불어난다는 말이 사실인가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 사실입니다. 대부분의 시중은행 마이너스 통장은 매월 결제일(통상 셋째 주 주말)에 한 달 동안 발생한 이자를 통장 원금에 마이너스로 자동 합산하여 청구합니다. 만약 결제일에 이자를 갚지 않고 그대로 마이너스 상태로 방치하면, 다음 달에는 '원금 + 지난달 이자'를 합친 전체 금액에 대해 대출 금리가 적용되므로 이자에 이자가 붙는 월복리(Compound Interest) 구조로 이자 부담이 급증하게 됩니다."}}, {"@type": "Question", "name": "공모주 청약이나 부동산 잔금 등 단기 자금 운용 시 어떤 대출이 더 유리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "사용 기간이 며칠~몇 달 이내로 짧고 수시로 입출금이 발생하는 경우에는 **마이너스 통장**이 압도적으로 유리합니다. 중도상환수수료가 100% 면제되어 돈이 생길 때마다 수수료 없이 원금을 갚아 이자를 즉시 끌 수 있기 때문입니다. 반면 1년 이상 장기간 거액을 고정적으로 빌려야 한다면, 기본 금리가 0.5%p 이상 저렴하고 분할 상환이 가능한 **일반 건별 신용대출**을 선택하는 것이 총비용 측면에서 훨씬 경제적입니다."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge">PFL</span>
+        <span>포켓핀랩 (PocketFinLab)</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="/">홈</a> <a href="/category/tax.html">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html" class="active">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+<article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+  <nav class="breadcrumb" aria-label="경로">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/category/finance.html">금융·연금</a>
+  </nav>
+  <header class="article-header">
+    <span class="badge">금융·연금</span>
+    <h1 itemprop="headline">2026년 마이너스 통장 한도대출 vs 일반 건별 신용대출 금리 이자 계산법: 일할 계산 복리 효과와 중도상환수수료 DSR 비교 가이드</h1>
+    <p class="article-desc" itemprop="description">2026년 직장인과 개인 사업자를 위한 마이너스 통장(유동성 한도대출)과 일반 만기일시 건별 신용대출의 금리 스프레드(약 0.3~0.5%p 차이) 원인, 실제 인출 일수 기반 일할 계산 이자 산출 공식, 미사용 한도에 대한 스트레스 DSR 2단계 차감 한도 규제 및 중도상환수수료 유불리 비교를 상세 해설합니다.</p>
+    <div class="article-byline">
+      <span>작성: 포켓핀랩 에디터팀</span>
+      <time itemprop="datePublished" datetime="2026-11-04">기준일: 2026-11-04</time>
+    </div>
+  </header>
+  
+  <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 마이너스 통장 vs 일반 신용대출 핵심 스펙 비교</a></li><li><a href="#sec-2">2. 실전 이자 계산법: 일할 계산 vs 복리 효과 분석</a></li><li class="toc-sub"><a href="#sec-3">① 마이너스 통장 일할 계산 공식</a></li><li class="toc-sub"><a href="#sec-4">② 일반 신용대출로 동일 금액을 조달했을 때의 비용</a></li><li><a href="#sec-5">3. 스트레스 DSR 2단계 규제와 대출 한도 방어 전략</a></li><li><a href="#sec-6">4. 나에게 맞는 대출 상품 선택 3단계 가이드</a></li><li><a href="#sec-7">5. 대출 실행 전 최종 점검 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-housing_loan" data-calc="housing_loan" aria-label="디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>디딤돌·버팀목 정책대출 한도 점검 &amp; 월 상환액 계산기</h3>
+    <p>가구 유형별 정책대출 상한선과 희망 대출금·금리를 대입해 매월 납입할 원리금(또는 전세 월 이자)을 즉시 시뮬레이션합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>정책대출 및 가구 유형</span>
+          <select name="loan_type">
+            <option value="24000">디딤돌 생애최초 주택구입 (최대 2.4억 / 소득 7천만)</option>
+            <option value="32000">디딤돌 신혼·2자녀 이상 (최대 3.2억 / 소득 8.5천만)</option>
+            <option value="20000">디딤돌 일반 무주택 가구 (최대 2.0억 / 소득 6천만)</option>
+            <option value="20001">청년전용 버팀목 전세대출 (최대 2.0억 / 이자만 납부)</option>
+          </select>
+        </label>
+        <label class="calc-field">
+          <span>희망 대출 금액 (만 원)</span>
+          <input type="number" name="principal" value="20000" min="1000" max="50000" step="1000">
+        </label>
+        <label class="calc-field">
+          <span>예상 적용 연 금리 (%)</span>
+          <input type="number" name="rate" value="2.65" min="1.0" max="8.0" step="0.05">
+        </label>
+        <label class="calc-field">
+          <span>상환 기간 및 방식</span>
+          <select name="term">
+            <option value="360">30년 원리금균등 분할상환</option>
+            <option value="240">20년 원리금균등 분할상환</option>
+            <option value="120">10년 원리금균등 분할상환</option>
+            <option value="0">전세 만기일시상환 (월 이자만 납부)</option>
+          </select>
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+</section>
+  <div class="article-body" itemprop="articleBody">
+<p>급전이 필요하거나 주식 공모주 청약 증거금, 부동산 전세보증금 반환, 자동차 구입 대금 등 목돈을 마련해야 할 때 직장인들이 가장 먼저 검토하는 대표적인 금융 상품이 바로 <strong>'마이너스 통장(한도거래대출)'</strong>과 <strong>'일반 건별 신용대출'</strong>입니다.</p>
+<p>많은 금융 소비자들이 '마이너스 통장은 한도를 크게 뚫어놓아도 쓴 만큼만 이자를 내니까 무조건 신용대출보다 좋은 것 아니냐'며 습관적으로 마이너스 통장만을 선호하곤 합니다.</p>
+<p>하지만 마이너스 통장은 은행의 유동성 관리 비용으로 인해 일반 건별 신용대출보다 기본 적용 금리가 <strong>연 0.3%~0.5%p</strong>가량 높게 책정되며, 한 달치 발생 이자가 매월 대출 원금에 자동으로 얹어져 이자에 이자가 붙는 <strong>'월복리 덫'</strong>에 빠질 수 있다는 치명적인 구조적 맹점을 안고 있습니다.</p>
+<p>또한 금융당국이 가계부채 관리를 위해 시행 중인 <strong>스트레스 DSR(총부채원리금상환비율) 2단계</strong> 규제 하에서는 마이너스 통장을 단 1원도 쓰지 않고 한도만 유지하고 있더라도, 한도 금액 전체가 고스란히 개인 대출 부채로 잡혀 주택담보대출 한도가 수천만 원씩 깎여나가는 불이익을 당하게 됩니다.</p>
+<blockquote><p>"금융감독원 은행 여신거래 기본약관에 따르면 한도대출(마이너스통장)은 약정일로부터 매일 최종 잔액에 대하여 이율을 적용하여 일할 계산하며, 건별 대출과 달리 약정 기간 중 수시 상환 시 중도상환해약금이 전액 면제됩니다."</p></blockquote>
+<h2 id="sec-1">1. 마이너스 통장 vs 일반 신용대출 핵심 스펙 비교</h2>
+<p>두 상품의 근본적인 차이는 대출금의 지급 방식과 이자 산정 구조, 그리고 중도상환수수료 유무에 있습니다.</p>
+<div class="table-wrap"><table><thead><tr><th>비교 분석 항목</th><th>마이너스 통장 (유동성 한도대출)</th><th>일반 건별 신용대출 (만기일시·분할상환)</th><th>소비자 선택 유의점</th></tr></thead><tbody><tr><td>대출금 입금 방식</td><td>한도 약정 후 필요할 때 수시 인출</td><td>약정 금액 전체가 대출일에 통장 일시 입금</td><td>필요 즉시 전액 활용 vs 비상금 예비</td></tr><tr><td>기본 대출 금리</td><td>일반 신용대출 대비 약 0.3%~0.5%p 높음</td><td>상대적으로 우대금리 폭이 크고 저렴함</td><td>1년 이상 장기 보유 시 이자 격차 확대</td></tr><tr><td>이자 계산 방식</td><td>매일 자정 기준 사용 잔액에 대해 일할 계산</td><td>대출 원금 전체에 대해 365일 고정 계산</td><td>며칠만 쓰고 갚으면 마이너스 통장 완승</td></tr><tr><td>중도상환수수료</td><td>100% 면제 (언제 갚아도 수수료 0원)</td><td>대출 후 3년 이내 상환 시 0.5%~1.2% 부과</td><td>단기 자금 회전 시 신용대출 수수료 부담</td></tr><tr><td>상환 및 이자 결제</td><td>매월 결제일 마이너스 원금에 자동 합산 (월복리)</td><td>매월 지정일에 원리금 별도 출금 상환</td><td>마통 결제일 이자 미납 시 복리 증식</td></tr><tr><td>DSR 한도 차감</td><td>인출 여부와 무관하게 약정 한도 전액 반영</td><td>대출 잔액 전액 반영</td><td>주담대 실행 전 미사용 마통 해지 필수</td></tr></tbody></table></div>
+<h2 id="sec-2">2. 실전 이자 계산법: 일할 계산 vs 복리 효과 분석</h2>
+<p>마이너스 통장과 신용대출의 손익분기점을 판가름하는 가장 확실한 공식은 <strong>'실제 대출 일수'</strong>에 따른 이자 지출액 산출입니다.</p>
+<h3 id="sec-3">① 마이너스 통장 일할 계산 공식</h3>
+<p>$$	ext{일일 발생 이자} = rac{	ext{당일 마이너스 사용 잔액} 	imes 	ext{대출 연이율}}{365}$$ 예를 들어 금리 연 5.5%의 마이너스 통장에서 공모주 청약 증거금으로 3,000만 원을 인출하여 정확히 4일 만에 환불받아 갚았다고 가정해 보겠습니다.</p>
+<ul><li>4일간 발생 이자 = $30,000,000원 	imes 5.5\% 	imes rac{4}{365} = 18,082원$</li></ul>
+<p>중도상환수수료가 없으므로 18,082원만 납부하면 대출 계약이 깔끔하게 종결됩니다.</p>
+<h3 id="sec-4">② 일반 신용대출로 동일 금액을 조달했을 때의 비용</h3>
+<p>금리 연 5.0%로 3,000만 원의 건별 신용대출을 받아 4일 만에 조기 상환할 경우:</p>
+<ul><li>4일간 대출 이자 = $30,000,000원 	imes 5.0\% 	imes rac{4}{365} = 16,438원$</li><li>중도상환수수료 (상환액의 0.8% 적용 시) = $30,000,000원 	imes 0.8\% = 240,000원$</li><li><strong>총비용 합계</strong> = $16,438원 + 240,000원 = 256,438원$</li></ul>
+<p>즉, 단 며칠간 쓰는 단기 자금의 경우 기본 금리가 0.5%p 비싸더라도 중도상환수수료가 없는 <strong>마이너스 통장이 23만 원 이상 압도적으로 유리</strong>합니다.</p>
+<div class="table-wrap"><table><thead><tr><th>자금 운용 시나리오</th><th>5,000만 원 마이너스 통장 (연 5.5%)</th><th>5,000만 원 신용대출 (연 5.0%)</th><th>최종 추천 상품</th></tr></thead><tbody><tr><td>10일간 단기 자금 회전</td><td>발생 이자 약 75,342원 (수수료 0원)</td><td>이자 68,493원 + 중도상환수수료 400,000원 = 468,493원</td><td><strong>마이너스 통장 절대 우세</strong></td></tr><tr><td>3개월 사용 후 전액 상환</td><td>발생 이자 약 687,500원 (수수료 0원)</td><td>이자 625,000원 + 잔여 수수료 350,000원 = 975,000원</td><td><strong>마이너스 통장 우세</strong></td></tr><tr><td>1년 내내 전액 인출 상태 유지</td><td>연간 총이자 2,750,000원 (복리 효과 감안 시 증가)</td><td>연간 총이자 2,500,000원 (수수료 없이 만기 연장)</td><td><strong>일반 신용대출 25만 원 절세</strong></td></tr><tr><td>3년 만기 분할 상환 계획</td><td>마통 원금 상환 유예로 이자만 누적</td><td>원리금 균등 상환으로 원금 감채 효과</td><td><strong>일반 신용대출 선택 필수</strong></td></tr></tbody></table></div>
+<h2 id="sec-5">3. 스트레스 DSR 2단계 규제와 대출 한도 방어 전략</h2>
+<p>주택 구입이나 전세자금 마련을 위해 주택담보대출을 신청할 계획이 있다면 마이너스 통장 관리에 각별한 주의가 요구됩니다.</p>
+<ul><li><strong>미사용 마이너스 통장의 DSR 잠식</strong>: 은행은 고객이 마이너스 통장을 한 푼도 쓰지 않았더라도 약정된 한도(예: 1억 원)를 만기 1년~5년짜리 원리금 상환 대출로 간주하여 DSR을 계산합니다.</li><li>만약 연봉 7,000만 원 직장인이 1억 원짜리 마이너스 통장을 보유하고 있다면, 그 자체로 DSR 약 15~18%를 갉아먹게 되어 주택담보대출 가능 한도가 1억 원 이상 대폭 삭감됩니다.</li><li>따라서 주택담보대출 심사를 넣기 최소 2주 전에 쓰지 않는 마이너스 통장 한도를 축소하거나 아예 해지해야 본래 받을 수 있는 주택 대출 한도를 온전히 확보할 수 있습니다.</li></ul>
+<h2 id="sec-6">4. 나에게 맞는 대출 상품 선택 3단계 가이드</h2>
+<p>Step 1. 대출 자금의 예상 사용 기간 확정 자금을 사용하는 기간이 6개월 미만이고 입출금이 잦다면 마이너스 통장을, 1년 이상 고정적으로 사용할 생활 안정 자금이나 전세 잔금이라면 일반 건별 신용대출을 1순위로 지정합니다.</p>
+<p>Step 2. 1금융권 모바일 대출 금리 비교 플랫폼 활용 토스, 카카오페이, 핀다 등 대출 비교 플랫폼을 통해 주요 시중은행(신한·국민·하나·우리·농협)과 인터넷전문은행(카카오·토스·케이뱅크)의 마이너스 통장 및 일반 신용대출 금리 스프레드를 0.1%p 단위까지 실시간 조회합니다.</p>
+<p>Step 3. 이자 자동 합산 결제일 알림 설정 및 선제 상환 마이너스 통장을 개설했다면 은행 앱의 이자 결제일(예: 매월 셋째 주 일요일)에 알람을 맞춰두고, 결제일 전날에 통장 잔고를 채워 넣어 이자가 원금에 가산되어 복리로 불어나는 현상을 선제적으로 차단합니다.</p>
+<h2 id="sec-7">5. 대출 실행 전 최종 점검 체크리스트</h2>
+<p>불필요한 이자 지출과 신용도 하락을 막기 위해 다음 항목을 꼭 확인하십시오.</p>
+<ul><li>☐ 필요한 대출 기간이 며칠짜리 초단기인지, 1년 이상의 장기인지 계산하셨나요?</li><li>☐ 마이너스 통장 개설 시 일반 신용대출보다 가산되는 금리 격차(연 0.3~0.5%p)를 확인하셨나요?</li><li>☐ 대출 실행 후 6개월~1년 이내에 목돈이 생겨 조기 상환할 가능성이 열려 있나요?</li><li>☐ 향후 1년 이내에 주택담보대출이나 전세대출을 신청할 계획이 있어 DSR 한도 관리가 필요한가요?</li><li>☐ 급여 이체, 신용카드 실적, 청약통장 보유 등 은행별 우대금리 요건을 모두 채워 최저금리를 적용받으셨나요?</li></ul>
+  </div>
+  <section class="faq-section"><h2 id="faq">자주 묻는 질문 (FAQ)</h2><div class="faq-item"><div class="faq-q">Q. 마이너스 통장 금리가 일반 건별 신용대출보다 통상 0.3~0.5%p 더 높은 이유는 무엇인가요?</div><p class="faq-a">A. 은행 입장에서 마이너스 통장(한도대출)은 고객이 언제 돈을 빼 쓸지 알 수 없기 때문에 항상 약정된 한도만큼의 대출 준비 자금을 지급준비금 형태로 금고에 묶어두어야 하는 유동성 관리 비용이 발생하기 때문입니다. 반면 건별 신용대출은 대출 실행 즉시 약정 금액 전체가 고객 계좌로 입금되어 은행이 이자 수익을 확정적으로 확보할 수 있으므로, 리스크 프리미엄이 적게 반영되어 금리가 더 낮게 책정됩니다.</p></div><div class="faq-item"><div class="faq-q">Q. 마이너스 통장을 개설해 두고 1원도 쓰지 않으면 이자가 전혀 안 나오나요?</div><p class="faq-a">A. 네, 맞습니다. 마이너스 통장은 개설된 한도 금액이 아니라 매일 자정 기준으로 '실제 마이너스로 꺼내 쓴 잔액'에 대해서만 하루 단위(일할 계산)로 이자가 붙습니다. 따라서 5,000만 원 한도를 뚫어놓고 잔고를 0원 이상으로 유지한다면 1년 내내 대출 이자가 단 1원도 청구되지 않습니다. 다만 대출을 전혀 쓰지 않더라도 DSR 규제 산정 시에는 약정 한도 전액이 대출 잔액으로 잡힌다는 점은 주의해야 합니다.</p></div><div class="faq-item"><div class="faq-q">Q. 마이너스 통장 이자가 매월 원금에 가산되어 복리로 불어난다는 말이 사실인가요?</div><p class="faq-a">A. 네, 사실입니다. 대부분의 시중은행 마이너스 통장은 매월 결제일(통상 셋째 주 주말)에 한 달 동안 발생한 이자를 통장 원금에 마이너스로 자동 합산하여 청구합니다. 만약 결제일에 이자를 갚지 않고 그대로 마이너스 상태로 방치하면, 다음 달에는 '원금 + 지난달 이자'를 합친 전체 금액에 대해 대출 금리가 적용되므로 이자에 이자가 붙는 월복리(Compound Interest) 구조로 이자 부담이 급증하게 됩니다.</p></div><div class="faq-item"><div class="faq-q">Q. 공모주 청약이나 부동산 잔금 등 단기 자금 운용 시 어떤 대출이 더 유리한가요?</div><p class="faq-a">A. 사용 기간이 며칠~몇 달 이내로 짧고 수시로 입출금이 발생하는 경우에는 <strong>마이너스 통장</strong>이 압도적으로 유리합니다. 중도상환수수료가 100% 면제되어 돈이 생길 때마다 수수료 없이 원금을 갚아 이자를 즉시 끌 수 있기 때문입니다. 반면 1년 이상 장기간 거액을 고정적으로 빌려야 한다면, 기본 금리가 0.5%p 이상 저렴하고 분할 상환이 가능한 <strong>일반 건별 신용대출</strong>을 선택하는 것이 총비용 측면에서 훨씬 경제적입니다.</p></div></section>
+  
+  <div class="tag-list"><span class="tag-chip">#마이너스통장계산</span><span class="tag-chip">#신용대출금리비교</span><span class="tag-chip">#한도대출일할계산</span><span class="tag-chip">#마통복리효과</span><span class="tag-chip">#스트레스DSR한도</span></div>
+  <p class="disclaimer-box">※ 본 글은 공식 법령·기관 고시 자료를 바탕으로 정리한 일반 정보이며, 개인별 과세·심사 요건에 따라 실제 결과가 달라질 수 있으므로 신청 전 해당 기관의 최신 공고를 반드시 확인하시기 바랍니다.</p>
+  <section class="related-box"><h2>함께 읽으면 좋은 실전 가이드</h2><ul class="related-list"><li><a href="/posts/housing-rental-income-separate-taxation-14-percent.html">2026년 주택임대소득 분리과세 14% 세율 적용 기준 및 필요경비 감면율: 총수입금액 2천만원 이하와 종합과세 세액 비교 공식</a> <small>(2026-11-04)</small></li><li><a href="/posts/emergency-welfare-support-livelihood-grant-eligibility.html">2026년 긴급복지지원제도 생계지원금 수급 자격 및 금융재산 기준: 위기 사유 발생 시 1인 가구 71만원·4인 가구 183만원 선지원 후조사 신청법</a> <small>(2026-11-04)</small></li><li><a href="/posts/unemployment-benefits-daily-upper-lower-limit-calculation.html">2026년 실업급여(구직급여) 1일 상한액 66,000원·하한액 계산법 및 수급 요건: 피보험 단위기간 180일과 조기재취업수당 청구 공식</a> <small>(2026-11-03)</small></li><li><a href="/posts/inheritance-tax-blanket-deduction-spouse-credit-calculation.html">2026년 상속세 일괄공제 5억원 및 배우자 상속공제 최대 30억원 계산법: 사전증여 10년 합산 배제와 신고세액공제 3% 절세 공식</a> <small>(2026-11-03)</small></li></ul></section>
+</article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
+        <a href="/about.html">사이트 소개</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+        <a href="/terms.html">이용약관</a>
+        <a href="/contact.html">문의하기</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap.xml">사이트맵</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 포켓핀랩 (PocketFinLab). 공식 법령·기관 공시 기준의 실전 금융·세무·정책 리서치 정보를 제공합니다.</p>
+    </div>
+  </footer>
+</body>
+</html>
