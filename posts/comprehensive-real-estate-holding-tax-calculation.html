@@ -56,43 +56,36 @@
   </header>
   <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6688802615325841" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
   <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 2026년 종합부동산세 납세자 유형별 공제액 및 과세표준 산출 비교표</a></li><li><a href="#sec-2">2. 1주택자 연령별·보유기간별 세액공제 합산 한도율 비교표</a></li><li><a href="#sec-3">3. 국세청 홈택스 종합부동산세 간이계산 4단계 순서</a></li><li><a href="#sec-4">4. 종부세 과세 전 필수 점검 체크리스트</a></li></ol></nav>
-  <section class="calc-box" id="calc-tax_refund" data-calc="tax_refund" aria-label="중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기">
+  <section class="calc-box" id="calc-year_end_tax" data-calc="year_end_tax" aria-label="연말정산 신용·체크카드·전통시장 소득공제 &amp; 예상 환급금 계산기">
   <div class="calc-head">
     <span class="calc-kicker">실시간 시뮬레이터</span>
-    <h3>중기 청년 감면·월세 세액공제 5년 경정청구 환급 계산기</h3>
-    <p>연말정산 때 놓친 중소기업 취업자 소득세 감면 또는 무주택 월세 세액공제의 소급 환급 예상액(지방소득세 10% 포함)을 계산합니다.</p>
+    <h3>연말정산 신용·체크카드·전통시장 소득공제 &amp; 예상 환급금 계산기</h3>
+    <p>총급여 25% 최저사용 문턱을 신용카드(15%)부터 먼저 채우는 국세청 산식을 적용해 카드 소득공제액과 실제 절세(환급) 금액을 계산합니다.</p>
   </div>
   
       <div class="calc-grid">
         <label class="calc-field">
-          <span>누락된 경정청구 항목</span>
-          <select name="refund_type">
-            <option value="sme90">중소기업 취업 청년 90% 감면 (연 200만 한도)</option>
-            <option value="sme70">중기 고령자·장애인·경단녀 70% 감면 (연 200만 한도)</option>
-            <option value="rent17">월세 세액공제 17% (총급여 5,500만 이하)</option>
-            <option value="rent15">월세 세액공제 15% (총급여 5,500만~8,000만)</option>
-          </select>
+          <span>연간 총급여액 (만 원)</span>
+          <input type="number" name="salary" value="5200" min="1500" max="50000" step="100">
         </label>
         <label class="calc-field">
-          <span>연간 결정소득세(감면 시) 또는 연간 월세합계 (만 원)</span>
-          <input type="number" name="base_amt" value="180" min="0" max="10000" step="10">
+          <span>연간 신용카드 사용액 (만 원 · 15%)</span>
+          <input type="number" name="credit" value="1500" min="0" max="30000" step="50">
         </label>
         <label class="calc-field">
-          <span>소급 청구 연수 (최대 5년)</span>
-          <select name="years">
-            <option value="1">1년 치</option>
-            <option value="2">2년 치</option>
-            <option value="3" selected>3년 치</option>
-            <option value="4">4년 치</option>
-            <option value="5">5년 치</option>
-          </select>
+          <span>체크카드·현금영수증 (만 원 · 30%)</span>
+          <input type="number" name="debit" value="600" min="0" max="30000" step="50">
+        </label>
+        <label class="calc-field">
+          <span>전통시장·대중교통·문화비 (만 원 · 40%+)</span>
+          <input type="number" name="market" value="200" min="0" max="10000" step="20">
         </label>
       </div>
   <div class="calc-result" aria-live="polite">
     <div class="calc-primary">계산 중...</div>
     <div class="calc-breakdown"></div>
   </div>
-  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+  <div class="calc-more"><a href="/tools/year-end-tax.html">전용 계산기 전체화면 열기</a> · <a href="/tools.html">9종 금융 계산기 모음 &rarr;</a></div>
 </section>
   <div class="article-body" itemprop="articleBody">
 <p>매년 11월 말이 다가오면 고가 아파트를 보유한 1세대 1주택자와 수도권에 주택을 여러 채 보유한 다주택자들의 시선은 국세청의 종합부동산세 납부고지서 발송 일정에 일제히 집중됩니다.</p>

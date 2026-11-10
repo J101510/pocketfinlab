@@ -56,39 +56,36 @@
   </header>
   <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6688802615325841" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
   <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 리볼빙 300만원 이용 시 약정 비율별 총 납부 이자 및 상환 기간 시뮬레이션</a></li><li><a href="#sec-2">2. 카드사별 리볼빙 평균 수수료율 및 신용평가 영향 비교</a></li><li class="toc-sub"><a href="#sec-3">리볼빙 빚더미에서 탈출하는 3단계 실천 로드맵</a></li><li class="toc-sub"><a href="#sec-4">신용카드 리볼빙 예방 필수 점검 체크리스트</a></li></ol></nav>
-  <section class="calc-box" id="calc-pension_isa" data-calc="pension_isa" aria-label="연금저축·IRP + ISA 만기이전 세액공제 환급 계산기">
+  <section class="calc-box" id="calc-year_end_tax" data-calc="year_end_tax" aria-label="연말정산 신용·체크카드·전통시장 소득공제 &amp; 예상 환급금 계산기">
   <div class="calc-head">
     <span class="calc-kicker">실시간 시뮬레이터</span>
-    <h3>연금저축·IRP + ISA 만기이전 세액공제 환급 계산기</h3>
-    <p>연간 납입액과 ISA 만기 전환금을 입력하면 올해 연말정산 현금 환급액과 자유 인출(비과세) 가능 원금을 즉시 계산합니다.</p>
+    <h3>연말정산 신용·체크카드·전통시장 소득공제 &amp; 예상 환급금 계산기</h3>
+    <p>총급여 25% 최저사용 문턱을 신용카드(15%)부터 먼저 채우는 국세청 산식을 적용해 카드 소득공제액과 실제 절세(환급) 금액을 계산합니다.</p>
   </div>
   
       <div class="calc-grid">
         <label class="calc-field">
-          <span>총급여(종합소득) 구간</span>
-          <select name="bracket">
-            <option value="0.165">총급여 5,500만 이하 (종합소득 4,500만 이하) · 16.5%</option>
-            <option value="0.132">총급여 5,500만 초과 (종합소득 4,500만 초과) · 13.2%</option>
-          </select>
+          <span>연간 총급여액 (만 원)</span>
+          <input type="number" name="salary" value="5200" min="1500" max="50000" step="100">
         </label>
         <label class="calc-field">
-          <span>연금저축 납입액 (만 원)</span>
-          <input type="number" name="pension" value="600" min="0" max="1800" step="50">
+          <span>연간 신용카드 사용액 (만 원 · 15%)</span>
+          <input type="number" name="credit" value="1500" min="0" max="30000" step="50">
         </label>
         <label class="calc-field">
-          <span>IRP 납입액 (만 원)</span>
-          <input type="number" name="irp" value="300" min="0" max="1800" step="50">
+          <span>체크카드·현금영수증 (만 원 · 30%)</span>
+          <input type="number" name="debit" value="600" min="0" max="30000" step="50">
         </label>
         <label class="calc-field">
-          <span>ISA 만기 연금전환 입금액 (만 원)</span>
-          <input type="number" name="isa" value="3000" min="0" max="20000" step="100">
+          <span>전통시장·대중교통·문화비 (만 원 · 40%+)</span>
+          <input type="number" name="market" value="200" min="0" max="10000" step="20">
         </label>
       </div>
   <div class="calc-result" aria-live="polite">
     <div class="calc-primary">계산 중...</div>
     <div class="calc-breakdown"></div>
   </div>
-  <div class="calc-more"><a href="/tools.html">전체 세금·연금·대출 계산기 모음 보기 &rarr;</a></div>
+  <div class="calc-more"><a href="/tools/year-end-tax.html">전용 계산기 전체화면 열기</a> · <a href="/tools.html">9종 금융 계산기 모음 &rarr;</a></div>
 </section>
   <div class="article-body" itemprop="articleBody">
 <p>월급날 통장 잔고를 스쳐 지나가는 카드 대금 고지서를 보며 이번 달 결제 금액을 감당하기 어려울 때 스마트폰 카드사 앱 화면에 가장 매력적으로 깜빡이는 버튼이 바로 '일부결제금액이월약정(리볼빙)'입니다.</p>

@@ -203,6 +203,73 @@
           '이자 과세 차감: -' + fmtWon(tax)
         ]
       };
+    },
+    year_end_tax: function (el) {
+      var salary = num(el, 'salary') * 10000;
+      var credit = num(el, 'credit') * 10000;
+      var debit = num(el, 'debit') * 10000;
+      var market = num(el, 'market') * 10000;
+      var minSpend = salary * 0.25;
+      var rem = minSpend;
+      var cUse = Math.min(credit, rem); rem -= cUse;
+      var dUse = Math.min(debit, rem); rem -= dUse;
+      var mUse = Math.min(market, rem); rem -= mUse;
+      var cEx = Math.max(0, credit - cUse);
+      var dEx = Math.max(0, debit - dUse);
+      var mEx = Math.max(0, market - mUse);
+      var basicCap = salary <= 70000000 ? 3000000 : 2500000;
+      var rawBasic = cEx * 0.15 + dEx * 0.30;
+      var basicDed = Math.min(basicCap, rawBasic);
+      var overflow = Math.max(0, rawBasic - basicCap);
+      var extraDed = Math.min(3000000, mEx * 0.40 + Math.min(overflow, mEx * 0.40));
+      var totalDed = basicDed + extraDed;
+      var taxRate = salary <= 30000000 ? 0.066 : (salary <= 74000000 ? 0.165 : (salary <= 120000000 ? 0.264 : 0.385));
+      var estRefund = totalDed * taxRate;
+      var totalSpent = credit + debit + market;
+      if (totalSpent <= minSpend) {
+        return {
+          primary: '카드 소득공제: 0원 (25% 문턱까지 ' + fmtWon(minSpend - totalSpent) + ' 부족)',
+          items: [
+            '총급여 25% 최저사용기준: ' + fmtWon(minSpend),
+            '현재 합산 사용액: ' + fmtWon(totalSpent),
+            '전략: 문턱 이하 구간은 혜택 좋은 신용카드 사용 유리'
+          ]
+        };
+      }
+      return {
+        primary: '예상 절세(환급) 효과: 약 ' + fmtWon(estRefund) + ' (총 소득공제 ' + fmtWon(totalDed) + ')',
+        items: [
+          '25% 문턱(' + fmtWon(minSpend) + ') 초과분 공제 반영',
+          '기본한도 공제: ' + fmtWon(basicDed) + ' / ' + fmtWon(basicCap),
+          '전통시장·교통 추가공제: ' + fmtWon(extraDed) + ' · 적용 한계세율 ' + (taxRate * 100).toFixed(1) + '%'
+        ]
+      };
+    },
+    nhis_premium: function (el) {
+      var inc = num(el, 'income') * 10000;
+      var prop = num(el, 'prop_taxbase') * 10000;
+      var bizEl = el.querySelector('[name="biz_status"]');
+      var biz = bizEl ? bizEl.value : 'none';
+      var depOk = (inc <= 20000000) && (prop <= 540000000 || (prop <= 900000000 && inc <= 10000000)) && (biz !== 'biz_taxable');
+      var incPrem = inc <= 3360000 ? 19780 : (inc / 12) * 0.0709;
+      var netProp = Math.max(0, prop - 100000000);
+      var propPrem = 0;
+      if (netProp > 0) {
+        var units = Math.pow(netProp / 1000000, 0.62) * 28;
+        propPrem = units * 208.4;
+      }
+      var health = Math.round(incPrem + propPrem);
+      var care = Math.round(health * 0.1295);
+      var totalMonthly = health + care;
+      var verdict = depOk ? '피부양자 자격 유지 가능 (본인 건보료 0원)' : '지역가입자 전환 대상 · 월 예상 ' + fmtWon(totalMonthly);
+      return {
+        primary: verdict,
+        items: [
+          '지역 전환 시 월 합계(장기요양 포함): 약 ' + fmtWon(totalMonthly),
+          '소득분 건보료: ' + fmtWon(health - propPrem) + ' · 재산분(1억 공제 후): ' + fmtWon(propPrem),
+          '자동차 건보료: 0원 (폐지 반영)'
+        ]
+      };
     }
   };
 
