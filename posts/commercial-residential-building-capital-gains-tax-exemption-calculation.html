@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>상가겸용주택 양도소득세 비과세 면적 판정과 장기보유특별공제 계산 | 포켓핀랩 (PocketFinLab)</title>
+  <meta name="description" content="상가와 주택이 복합된 상가겸용주택(점포주택) 양도 시 1세대 1주택 비과세 판정 기준과 실거래가 12억원 초과 고가 겸용주택의 주택면적·상가면적 안분 계산법 및 최대 80% 장기보유특별공제 적용 공식을 총정리합니다.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://pocketfinlab.com/posts/commercial-residential-building-capital-gains-tax-exemption-calculation.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="alternate" type="application/rss+xml" title="포켓핀랩 (PocketFinLab) RSS" href="/rss.xml">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="포켓핀랩 (PocketFinLab)">
+  <meta property="og:title" content="상가겸용주택 양도소득세 비과세 면적 판정과 장기보유특별공제 계산 | 포켓핀랩 (PocketFinLab)">
+  <meta property="og:description" content="상가와 주택이 복합된 상가겸용주택(점포주택) 양도 시 1세대 1주택 비과세 판정 기준과 실거래가 12억원 초과 고가 겸용주택의 주택면적·상가면적 안분 계산법 및 최대 80% 장기보유특별공제 적용 공식을 총정리합니다.">
+  <meta property="og:url" content="https://pocketfinlab.com/posts/commercial-residential-building-capital-gains-tax-exemption-calculation.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="google-site-verification" content="7fDB0RaM35akCb-yBbFi0eyPyT5Xi4chMZJlOWzeKb0">
+  <meta name="naver-site-verification" content="48649260f7bfc786028d6832e5c79c5596a6c7ed">
+  <meta name="google-adsense-account" content="ca-pub-6688802615325841">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6688802615325841" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/calculators.js"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "상가겸용주택 양도소득세 비과세 면적 판정과 장기보유특별공제 계산", "description": "상가와 주택이 복합된 상가겸용주택(점포주택) 양도 시 1세대 1주택 비과세 판정 기준과 실거래가 12억원 초과 고가 겸용주택의 주택면적·상가면적 안분 계산법 및 최대 80% 장기보유특별공제 적용 공식을 총정리합니다.", "datePublished": "2026-11-12", "dateModified": "2026-11-12", "author": {"@type": "Organization", "name": "포켓핀랩 에디터팀"}, "publisher": {"@type": "Organization", "name": "포켓핀랩 (PocketFinLab)"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://pocketfinlab.com/posts/commercial-residential-building-capital-gains-tax-exemption-calculation.html"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://pocketfinlab.com/"}, {"@type": "ListItem", "position": 2, "name": "세금·환급", "item": "https://pocketfinlab.com/category/tax.html"}, {"@type": "ListItem", "position": 3, "name": "상가겸용주택 양도소득세 비과세 면적 판정과 장기보유특별공제 계산", "item": "https://pocketfinlab.com/posts/commercial-residential-building-capital-gains-tax-exemption-calculation.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "주택 면적이 상가 면적보다 크면 건물 전체를 주택으로 보아 양도세 비과세를 받을 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "양도가액 12억 원 이하인 경우에는 주택 면적이 상가 면적보다 클 때 건물 전체를 주택으로 보아 1세대 1주택 비과세가 적용됩니다. 그러나 실거래 양도가액이 12억 원을 초과하는 '고가 겸용주택'은 주택 면적이 상가 면적보다 크더라도 주택 부분만 주택으로 보고, 상가 부분은 주택으로 인정되지 않아 일반 양도소득세가 과세됩니다."}}, {"@type": "Question", "name": "고가 상가겸용주택의 양도가액과 취득가액은 상가와 주택으로 어떻게 나누어 계산하나요?", "acceptedAnswer": {"@type": "Answer", "text": "원칙적으로 매매계약서상 주택과 상가의 구분 가액이 있다면 그 실지거래가액에 따르며, 구분이 불분명한 경우에는 부가가치세법 및 소득세법 시행령에 따라 양도 당시의 기준시가(개별주택가격 및 상가 기준시가) 비율로 안분하여 주택 양도가액과 상가 양도가액을 각각 산정합니다."}}, {"@type": "Question", "name": "상가겸용주택의 토지도 주택 부속토지와 상가 부속토지로 안분해야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 맞습니다. 토지 역시 전체 토지 면적에 건물 총 연면적 중 주택 연면적이 차지하는 비율을 곱하여 주택 부속토지를 산출하고, 나머지를 상가 부속토지로 구분합니다. 주택 부속토지는 도시지역 내 주택 정착 면적의 3배(수도권 외 5배) 한도 내에서만 비과세 대상 부속토지로 인정됩니다."}}, {"@type": "Question", "name": "상가 부분에도 거주기간 및 보유기간에 따른 최대 80% 장기보유특별공제가 적용되나요?", "acceptedAnswer": {"@type": "Answer", "text": "적용되지 않습니다. 표2의 1세대 1주택 장기보유특별공제(보유 40% + 거주 40%, 최대 80%)는 오직 비과세 요건을 충족한 '주택 부분(12억 초과분)'에만 적용됩니다. 상가 부분은 거주 여부와 무관하게 일반 부동산 공제율인 표1(연 2%, 15년 이상 최대 30%)만 적용되므로 세부담 차이가 크게 발생합니다."}}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge">PFL</span>
+        <span>포켓핀랩 (PocketFinLab)</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="/">홈</a> <a href="/category/tax.html" class="active">세금·환급</a> <a href="/category/policy.html">지원금·청약</a> <a href="/category/finance.html">금융·연금</a> <a href="/tools.html">금융 계산기</a> <a href="/about.html">소개</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+<article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+  <nav class="breadcrumb" aria-label="경로">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/category/tax.html">세금·환급</a>
+  </nav>
+  <header class="article-header">
+    <span class="badge">세금·환급</span>
+    <h1 itemprop="headline">상가겸용주택 양도소득세 비과세 면적 판정과 장기보유특별공제 계산</h1>
+    <p class="article-desc" itemprop="description">상가와 주택이 복합된 상가겸용주택(점포주택) 양도 시 1세대 1주택 비과세 판정 기준과 실거래가 12억원 초과 고가 겸용주택의 주택면적·상가면적 안분 계산법 및 최대 80% 장기보유특별공제 적용 공식을 총정리합니다.</p>
+    <div class="article-byline">
+      <span>작성: 포켓핀랩 에디터팀</span>
+      <time itemprop="datePublished" datetime="2026-11-12">기준일: 2026-11-12</time>
+    </div>
+  </header>
+  <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6688802615325841" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+  <nav class="toc" aria-label="목차"><div class="toc-title">목차</div><ol><li><a href="#sec-1">1. 12억 원 기준 상가겸용주택 비과세 판정 메커니즘 비교</a></li><li><a href="#sec-2">2. 주택 vs 상가 안분 계산 공식과 장특공제 80% 적용 실익 비교</a></li><li class="toc-sub"><a href="#sec-3">상가겸용주택 양도 전 3단계 필수 절세 로드맵</a></li><li class="toc-sub"><a href="#sec-4">겸용주택 매도 계약 전 필수 점검 체크리스트</a></li></ol></nav>
+  <section class="calc-box" id="calc-year_end_tax" data-calc="year_end_tax" aria-label="연말정산 신용·체크카드·전통시장 소득공제 &amp; 예상 환급금 계산기">
+  <div class="calc-head">
+    <span class="calc-kicker">실시간 시뮬레이터</span>
+    <h3>연말정산 신용·체크카드·전통시장 소득공제 &amp; 예상 환급금 계산기</h3>
+    <p>총급여 25% 최저사용 문턱을 신용카드(15%)부터 먼저 채우는 국세청 산식을 적용해 카드 소득공제액과 실제 절세(환급) 금액을 계산합니다.</p>
+  </div>
+  
+      <div class="calc-grid">
+        <label class="calc-field">
+          <span>연간 총급여액 (만 원)</span>
+          <input type="number" name="salary" value="5200" min="1500" max="50000" step="100">
+        </label>
+        <label class="calc-field">
+          <span>연간 신용카드 사용액 (만 원 · 15%)</span>
+          <input type="number" name="credit" value="1500" min="0" max="30000" step="50">
+        </label>
+        <label class="calc-field">
+          <span>체크카드·현금영수증 (만 원 · 30%)</span>
+          <input type="number" name="debit" value="600" min="0" max="30000" step="50">
+        </label>
+        <label class="calc-field">
+          <span>전통시장·대중교통·문화비 (만 원 · 40%+)</span>
+          <input type="number" name="market" value="200" min="0" max="10000" step="20">
+        </label>
+      </div>
+  <div class="calc-result" aria-live="polite">
+    <div class="calc-primary">계산 중...</div>
+    <div class="calc-breakdown"></div>
+  </div>
+  <div class="calc-more"><a href="/tools/year-end-tax.html">전용 계산기 전체화면 열기</a> · <a href="/tools.html">9종 금융 계산기 모음 &rarr;</a></div>
+</section>
+  <div class="article-body" itemprop="articleBody">
+<p>은퇴 자산으로 상가주택이나 점포겸용주택을 보유하며 1층에서는 임대료를 받고 2~3층에는 직접 거주해 오던 부동산 소유자분들이 건물을 매도할 때 가장 큰 세금 충격을 받는 분야가 바로 '상가겸용주택 양도소득세'입니다.</p>
+<p>많은 건물주분들이 '주택 면적이 상가 면적보다 단 1제곱미터라도 넓으면 건물 전체를 1주택으로 보아 12억 원까지 전액 비과세를 받고, 초과분도 80% 장특공제를 받을 수 있겠지'라며 과거의 세법 규정만을 기억하곤 합니다.</p>
+<p>하지만 소득세법 개정 이후 실거래가 12억 원을 초과하는 고가 겸용주택은 주택 연면적이 상가 연면적보다 크더라도 상가 부분을 절대 주택으로 보지 않고, 오직 '실제 주택 부분'만 1세대 1주택 비과세 및 거주 요건 장기보유특별공제를 적용하는 엄격한 안분 과세가 시행되고 있습니다.</p>
+<p>따라서 건물 전체의 양도가액이 15억, 20억을 넘어가는 상가주택의 경우, 주택과 상가의 면적 비율 및 기준시가 안분 계산을 어떻게 설계하느냐에 따라 최종 납부 세액이 수천만 원에서 수억 원까지 벌어지게 됩니다.</p>
+<blockquote><p>"상가겸용주택의 양도세 절세는 매매 계약서를 작성하기 전에 시작됩니다. 주택 면적과 상가 면적의 실측 공부상 일치 여부, 옥탑방 및 지하실의 실제 주거 사용 입증, 기준시가 안분 비율 산정이 최종 세액을 결정합니다."</p></blockquote>
+<h2 id="sec-1">1. 12억 원 기준 상가겸용주택 비과세 판정 메커니즘 비교</h2>
+<p>매매가액 12억 원 이하 일반 겸용주택과 12억 원 초과 고가 겸용주택의 과세 기준 비교표입니다.</p>
+<div class="table-wrap"><table><thead><tr><th>구분 항목</th><th>실거래가 12억 원 이하 겸용주택</th><th>실거래가 12억 원 초과 고가 겸용주택</th></tr></thead><tbody><tr><td>주택 면적 &gt; 상가 면적</td><td><strong>건물 및 부속토지 전체를 주택으로 간주</strong> (전액 비과세)</td><td><strong>주택 부분만 주택으로 간주</strong>, 상가 부분은 무조건 과세</td></tr><tr><td>주택 면적 ≤ 상가 면적</td><td>주택 부분만 비과세, 상가 부분은 일반 과세</td><td>주택 부분만 비과세(12억 초과 과세), 상가 부분 일반 과세</td></tr><tr><td>12억 초과 주택 장특공제</td><td>비해당 (전액 비과세 종결)</td><td>거주 40% + 보유 40% (최대 80% 장특공제 적용)</td></tr><tr><td>상가 부분 장특공제</td><td>비해당 (전체 비과세 처리)</td><td>거주 무관 일반 공제(연 2%, 최대 30% 한도 적용)</td></tr><tr><td>부가가치세 과세 여부</td><td>부가가치세 면제</td><td><strong>상가 건물 양도가액에 대해 10% 부가세 별도 발생</strong></td></tr></tbody></table></div>
+<p>위 비교표에서 볼 수 있듯이, 12억 원 이하의 상가주택은 주택 면적이 상가보다 넓기만 하면 상가까지 통째로 주택 비과세를 적용받아 세금이 0원이 될 수 있습니다.</p>
+<p>하지만 실거래가가 12억 원을 단 1원이라도 초과하는 순간 고가주택 규제가 적용되어 상가 부분은 무조건 양도소득세 과세 대상이 되며, 상가 건물분에 대한 10%의 부가가치세 납부 의무까지 수반됩니다.</p>
+<h2 id="sec-2">2. 주택 vs 상가 안분 계산 공식과 장특공제 80% 적용 실익 비교</h2>
+<p>고가 겸용주택 매도 시 주택 부분과 상가 부분에 적용되는 세무상 취급과 공제율 비교표입니다.</p>
+<div class="table-wrap"><table><thead><tr><th>비교 항목</th><th>주택 부분 (12억 원 초과분)</th><th>상가 부분 (상가 건물 및 부속토지)</th></tr></thead><tbody><tr><td>양도가액 산정 방식</td><td>총 양도가액 × (주택 기준시가 ÷ 전체 기준시가)</td><td>총 양도가액 × (상가 기준시가 ÷ 전체 기준시가)</td></tr><tr><td>비과세 적용 여부</td><td>1세대 1주택 요건 충족 시 12억 원까지 비과세</td><td><strong>비과세 없음 (양도차익 전액 과세 대상)</strong></td></tr><tr><td>장기보유특별공제율</td><td><strong>보유기간(최대 40%) + 거주기간(최대 40%) = 최대 80%</strong></td><td>보유기간별 연 2%씩 15년 이상 최대 30%</td></tr><tr><td>세율 적용 방식</td><td>6% ~ 45% 누진세율 (초과 누진 과세)</td><td>6% ~ 45% 누진세율 (타 소득과 합산 과세)</td></tr><tr><td>지방소득세 가산</td><td>산출세액의 10% 별도 부과</td><td>산출세액의 10% 별도 부과</td></tr></tbody></table></div>
+<p>주택 부분의 경우 1세대 1주택 2년 이상 보유 및 2년 이상 거주 요건을 충족하면, 12억 원 초과분에 대해서도 매년 8%씩(보유 4% + 거주 4%) 최대 80%의 파격적인 장기보유특별공제가 적용되어 세부담이 대폭 낮아집니다.</p>
+<p>반면 상가 부분은 거주 요건 특례가 전혀 없으며, 15년 이상 장기 보유하더라도 최대 30%의 공제만 인정되므로 양도차익의 대부분이 고율의 누진세율 구간에 노출됩니다.</p>
+<p>내 상가겸용주택의 예상 양도세와 안분 비율에 따른 세액 변동을 정밀하게 계산해 보고 싶다면 <a href="https://pocketfinlab.com/tools.html" rel="noopener">포켓핀랩 금융 계산기 모음(/tools.html)</a>을 활용해 보시기 바랍니다.</p>
+<h3 id="sec-3">상가겸용주택 양도 전 3단계 필수 절세 로드맵</h3>
+<p>Step 1. 지하실·옥탑방의 실제 주거 용도 입증 서류 확보 건축물대장상 근린생활시설이나 창고로 되어 있더라도 실제 주거용 방이나 주택 임차인이 주거용으로 사용했다면 사실상 주택으로 인정받을 수 있습니다. 전입세대확인서, 임대차계약서, 내부 사진, 난방 시설 영수증 등을 철저히 준비합니다.</p>
+<p>Step 2. 매매계약서상 주택과 상가 가액의 합리적 구분 기재 계약서에 총액만 적지 않고 주택 가액과 상가 가액을 감정평가액이나 기준시가 비율을 감안하여 명확히 구분 기재하면 추후 과세관청과의 안분 분쟁을 미연에 방지할 수 있습니다.</p>
+<p>Step 3. 포괄양수도 계약을 통한 상가 부가가치세 10% 면제 상가 부분의 매매는 원칙적으로 건물분 부가가치세 10%가 과세되지만, 매수인이 사업을 그대로 승계하는 '사업포괄양수도' 계약을 체결하면 부가가치세 신고 및 납부 절차를 합법적으로 생략할 수 있습니다.</p>
+<h3 id="sec-4">겸용주택 매도 계약 전 필수 점검 체크리스트</h3>
+<ul><li>☐ 전체 매매 예정 가액이 12억 원을 초과하여 고가 겸용주택 안분 규정이 적용되는지 확인하셨나요?</li><li>☐ 건축물대장상 면적과 실제 사용 면적이 일치하는지 건축물 현황도를 대조하셨나요?</li><li>☐ 주택 부분에서 2년 이상 실제 거주하여 80% 장특공제 요건을 온전히 채우셨나요?</li><li>☐ 상가 임차인의 권리금 및 사업자 포괄양수도 승계 여부를 매수인과 사전에 합의하셨나요?</li><li>☐ 주택 부속토지가 도시지역 기준 주택 정착 면적의 3배 한도를 초과하지 않는지 면적을 계산하셨나요?</li></ul>
+<p>상가겸용주택은 주택과 상가의 복합적 특성 때문에 양도세 계산이 가장 복잡한 부동산 유형 중 하나입니다. 사전에 정확한 안분 계산과 절세 요건을 점검하셔서 소중한 부동산 자산을 세금으로부터 안전하게 지켜내시기 바랍니다.</p>
+  </div>
+  <section class="faq-section"><h2 id="faq">자주 묻는 질문 (FAQ)</h2><div class="faq-item"><div class="faq-q">Q. 주택 면적이 상가 면적보다 크면 건물 전체를 주택으로 보아 양도세 비과세를 받을 수 있나요?</div><p class="faq-a">A. 양도가액 12억 원 이하인 경우에는 주택 면적이 상가 면적보다 클 때 건물 전체를 주택으로 보아 1세대 1주택 비과세가 적용됩니다. 그러나 실거래 양도가액이 12억 원을 초과하는 '고가 겸용주택'은 주택 면적이 상가 면적보다 크더라도 주택 부분만 주택으로 보고, 상가 부분은 주택으로 인정되지 않아 일반 양도소득세가 과세됩니다.</p></div><div class="faq-item"><div class="faq-q">Q. 고가 상가겸용주택의 양도가액과 취득가액은 상가와 주택으로 어떻게 나누어 계산하나요?</div><p class="faq-a">A. 원칙적으로 매매계약서상 주택과 상가의 구분 가액이 있다면 그 실지거래가액에 따르며, 구분이 불분명한 경우에는 부가가치세법 및 소득세법 시행령에 따라 양도 당시의 기준시가(개별주택가격 및 상가 기준시가) 비율로 안분하여 주택 양도가액과 상가 양도가액을 각각 산정합니다.</p></div><div class="faq-item"><div class="faq-q">Q. 상가겸용주택의 토지도 주택 부속토지와 상가 부속토지로 안분해야 하나요?</div><p class="faq-a">A. 네, 맞습니다. 토지 역시 전체 토지 면적에 건물 총 연면적 중 주택 연면적이 차지하는 비율을 곱하여 주택 부속토지를 산출하고, 나머지를 상가 부속토지로 구분합니다. 주택 부속토지는 도시지역 내 주택 정착 면적의 3배(수도권 외 5배) 한도 내에서만 비과세 대상 부속토지로 인정됩니다.</p></div><div class="faq-item"><div class="faq-q">Q. 상가 부분에도 거주기간 및 보유기간에 따른 최대 80% 장기보유특별공제가 적용되나요?</div><p class="faq-a">A. 적용되지 않습니다. 표2의 1세대 1주택 장기보유특별공제(보유 40% + 거주 40%, 최대 80%)는 오직 비과세 요건을 충족한 '주택 부분(12억 초과분)'에만 적용됩니다. 상가 부분은 거주 여부와 무관하게 일반 부동산 공제율인 표1(연 2%, 15년 이상 최대 30%)만 적용되므로 세부담 차이가 크게 발생합니다.</p></div></section>
+  <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6688802615325841" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+  <div class="tag-list"><span class="tag-chip">#상가겸용주택</span><span class="tag-chip">#점포주택양도세</span><span class="tag-chip">#1세대1주택비과세</span><span class="tag-chip">#상가주택안분계산</span><span class="tag-chip">#장기보유특별공제</span><span class="tag-chip">#고가주택12억초과</span><span class="tag-chip">#양도소득세계산</span><span class="tag-chip">#상가양도소득세</span><span class="tag-chip">#부동산세금절세</span></div>
+  <p class="disclaimer-box">※ 본 글은 공식 법령·기관 고시 자료를 바탕으로 정리한 일반 정보이며, 개인별 과세·심사 요건에 따라 실제 결과가 달라질 수 있으므로 신청 전 해당 기관의 최신 공고를 반드시 확인하시기 바랍니다.</p>
+  <section class="related-box"><h2>함께 읽으면 좋은 실전 가이드</h2><ul class="related-list"><li><a href="/posts/national-scholarship-type1-income-bracket8-calculation-and-criteria.html">국가장학금 1유형 8구간 판정 기준과 학자금지원구간 모의계산 및 다자녀 등록금 지원 조건</a> <small>(2026-11-12)</small></li><li><a href="/posts/car-installment-vs-auto-loan-vs-card-cashback-interest-comparison.html">신차 구매 시 자동차 할부 vs 오토론 vs 카드 일시불 캐시백 금리와 실질 이자 비교</a> <small>(2026-11-12)</small></li><li><a href="/posts/parental-leave-allowance-2-5-million-won-criteria.html">육아휴직 급여 월 최대 250만원 인상 지급 기준과 사후지급금 폐지 총정리</a> <small>(2026-11-11)</small></li><li><a href="/posts/jeonse-loan-pledge-of-rights-notification-and-deposit-return.html">전세자금대출 질권설정 통지 효력과 전세금 반환 시 집주인 임차인 주의사항</a> <small>(2026-11-11)</small></li></ul></section>
+</article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/tools.html">금융 계산기</a>
+        <a href="/about.html">사이트 소개</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+        <a href="/terms.html">이용약관</a>
+        <a href="/contact.html">문의하기</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap.xml">사이트맵</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 포켓핀랩 (PocketFinLab). 공식 법령·기관 공시 기준의 실전 금융·세무·정책 리서치 정보를 제공합니다.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -6,6 +6,27 @@
     <description>세금 환급·정부지원금·연금 절세를 숫자와 공식 기준으로 검증하는 실전 금융 리서치 랩</description>
     <language>ko</language>
     <item>
+      <title>국가장학금 1유형 8구간 판정 기준과 학자금지원구간 모의계산 및 다자녀 등록금 지원 조건</title>
+      <link>https://pocketfinlab.com/posts/national-scholarship-type1-income-bracket8-calculation-and-criteria.html</link>
+      <guid>https://pocketfinlab.com/posts/national-scholarship-type1-income-bracket8-calculation-and-criteria.html</guid>
+      <description>한국장학재단 국가장학금 1유형 지원 대상인 8구간 소득인정액 모의계산법과 부채·기본재산 공제 공식, 연간 최대 570만원 지원금 및 다자녀 셋째 등록금 전액 지원 자격을 총정리합니다.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>상가겸용주택 양도소득세 비과세 면적 판정과 장기보유특별공제 계산</title>
+      <link>https://pocketfinlab.com/posts/commercial-residential-building-capital-gains-tax-exemption-calculation.html</link>
+      <guid>https://pocketfinlab.com/posts/commercial-residential-building-capital-gains-tax-exemption-calculation.html</guid>
+      <description>상가와 주택이 복합된 상가겸용주택(점포주택) 양도 시 1세대 1주택 비과세 판정 기준과 실거래가 12억원 초과 고가 겸용주택의 주택면적·상가면적 안분 계산법 및 최대 80% 장기보유특별공제 적용 공식을 총정리합니다.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>신차 구매 시 자동차 할부 vs 오토론 vs 카드 일시불 캐시백 금리와 실질 이자 비교</title>
+      <link>https://pocketfinlab.com/posts/car-installment-vs-auto-loan-vs-card-cashback-interest-comparison.html</link>
+      <guid>https://pocketfinlab.com/posts/car-installment-vs-auto-loan-vs-card-cashback-interest-comparison.html</guid>
+      <description>신차 구매 시 신용카드 일시불 오토캐시백 1.5% 환급과 1금융권 은행 오토론 금리 및 캐피탈사 할부 총 이자 비용을 정밀 비교하고, 자동차 대출이 주택담보대출 DSR 한도에 미치는 축소 영향을 분석합니다.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>육아휴직 급여 월 최대 250만원 인상 지급 기준과 사후지급금 폐지 총정리</title>
       <link>https://pocketfinlab.com/posts/parental-leave-allowance-2-5-million-won-criteria.html</link>
       <guid>https://pocketfinlab.com/posts/parental-leave-allowance-2-5-million-won-criteria.html</guid>
@@ -193,27 +214,6 @@
       <guid>https://pocketfinlab.com/posts/individual-treasury-bonds-yield-tax-benefit-redemption.html</guid>
       <description>2026년 대한민국 정부가 원리금을 100% 보장하는 개인투자용 국채 10년물과 20년물의 청약 일정, 표면금리+가산금리 연복리 만기수익률 공식, 매입액 2억원 한도 14% 분리과세 비과세 혜택 및 1년 후 중도환매 시 가산금리 박탈 페널티를 정밀 분석합니다.</description>
       <pubDate>Tue, 03 Nov 2026 09:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>2026년 미국 국채 ETF vs 달러 발행어음 금리·환헤지(H) 비교: 금리 인하 사이클 속 TLT 듀레이션 변동성과 달러 예금 세후 수익률 정밀 분석</title>
-      <link>https://pocketfinlab.com/posts/us-treasury-etf-vs-dollar-promissory-note-comparison.html</link>
-      <guid>https://pocketfinlab.com/posts/us-treasury-etf-vs-dollar-promissory-note-comparison.html</guid>
-      <description>미국 금리 인하 사이클 속 잔존 만기 20년 이상 미국 초장기 국채 ETF(TLT)의 듀레이션(17년) 자본차익 메커니즘, 증권사 달러 발행어음(연 4%대) 세후 수익률 비교 및 고환율기 환헤지(H) ETF 절세 전략을 정밀 해설합니다.</description>
-      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>2026년 부모급여·아동수당 지급액 및 소급 신청 기준: 0세 월 100만원·1세 월 50만원 가정양육 vs 어린이집 보육료 바우처 전환 차액 정밀 계산</title>
-      <link>https://pocketfinlab.com/posts/parental-allowance-child-benefit-payment-criteria.html</link>
-      <guid>https://pocketfinlab.com/posts/parental-allowance-child-benefit-payment-criteria.html</guid>
-      <description>2026년 만 0세 월 100만원, 만 1세 월 50만원 부모급여와 아동수당(월 10만원) 중복 수급 기준, 어린이집 보육료 바우처 전환 차액(약 46만원) 현금 입금 공식 및 출생일 60일 이내 소급 신청 절차를 총정리합니다.</description>
-      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>2026년 해외주식 양도소득세 250만원 기본공제 및 손익통산 계산법: 미국주식 22% 분리과세와 이동평균법 vs 선입선출법 환차익 절세 공식</title>
-      <link>https://pocketfinlab.com/posts/overseas-stock-capital-gains-tax-calculation.html</link>
-      <guid>https://pocketfinlab.com/posts/overseas-stock-capital-gains-tax-calculation.html</guid>
-      <description>서학개미를 위한 2026년 해외주식 양도소득세의 연간 250만원 기본공제, 국내·해외 손익통산 결제일 기준 산출 공식, 증권사별 단가 산정 방식(이동평균법 vs 선입선출법)에 따른 세액 차이 및 5월 홈택스 22% 확정신고 절세 전략을 정밀 해설합니다.</description>
-      <pubDate>Mon, 02 Nov 2026 09:00:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
