@@ -6,6 +6,27 @@
     <description>세금 환급·정부지원금·연금 절세를 숫자와 공식 기준으로 검증하는 실전 금융 리서치 랩</description>
     <language>ko</language>
     <item>
+      <title>일시적 1가구 2주택 종전주택 3년 처분기한 양도소득세 비과세 요건과 12억원 초과 계산법</title>
+      <link>https://pocketfinlab.com/posts/temporary-two-homes-3year-disposal-capital-gains-tax-exemption.html</link>
+      <guid>https://pocketfinlab.com/posts/temporary-two-homes-3year-disposal-capital-gains-tax-exemption.html</guid>
+      <description>이사 및 갈아타기를 위한 일시적 1세대 2주택 양도소득세 비과세 3대 핵심 요건(1년 경과 후 신규 취득, 3년 이내 종전주택 처분, 2년 보유·거주)과 양도가액 12억 원 초과 고가주택 과세 안분 공식을 실전 사례로 정리합니다.</description>
+      <pubDate>Sat, 14 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>저축성보험 비과세 한도 일시납 1억원 월납 150만원 10년 유지 요건과 중도인출 과세 기준</title>
+      <link>https://pocketfinlab.com/posts/tax-free-savings-insurance-10-year-limit-lump-sum-vs-monthly.html</link>
+      <guid>https://pocketfinlab.com/posts/tax-free-savings-insurance-10-year-limit-lump-sum-vs-monthly.html</guid>
+      <description>이자소득세 15.4%와 금융소득종합과세를 동시에 피할 수 있는 장기 저축성보험 비과세 요건(10년 이상 유지, 일시납 1억 원·월적립식 150만 원 한도)과 5년납 균등납입 조건, 중도인출 시 원금 우선 비과세 처리 기준을 완벽 분석합니다.</description>
+      <pubDate>Sat, 14 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>재난적의료비 지원사업 신청 자격과 비급여 병원비 최대 5000만원 환급 기준 총정리</title>
+      <link>https://pocketfinlab.com/posts/catastrophic-medical-expense-support-50-million-won-eligibility-and-application.html</link>
+      <guid>https://pocketfinlab.com/posts/catastrophic-medical-expense-support-50-million-won-eligibility-and-application.html</guid>
+      <description>갑작스러운 중증 질환 및 수술로 과도한 병원비가 발생했을 때 국민건강보험공단에서 비급여·전액본인부담금을 연간 최대 5,000만 원까지 지원해 주는 재난적의료비 지원사업의 소득·재산 기준과 퇴원 후 180일 신청 절차를 안내합니다.</description>
+      <pubDate>Sat, 14 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>임금체불 간이대지급금 신청 자격과 최대 1000만원 지급 절차 총정리</title>
       <link>https://pocketfinlab.com/posts/unpaid-wages-simplified-substitute-payment-application-and-limit.html</link>
       <guid>https://pocketfinlab.com/posts/unpaid-wages-simplified-substitute-payment-application-and-limit.html</guid>
@@ -193,27 +214,6 @@
       <guid>https://pocketfinlab.com/posts/family-loan-legal-interest-rate-gift-tax-exemption.html</guid>
       <description>2026년 부모 자식 간 금전 대여 시 상속세 및 증여세법상 당좌대출우대금리(연 4.6%) 적용 기준, 연간 이자 차액 1,000만 원 미만 비과세 조항을 활용한 2억 1,739만 원 무이자 차용 공식, 차용증 필수 기재 사항, 공증·확정일자 발급 및 국세청 계좌 내역 소명 전략을 총정리합니다.</description>
       <pubDate>Thu, 05 Nov 2026 09:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>2026년 마이너스 통장 한도대출 vs 일반 건별 신용대출 금리 이자 계산법: 일할 계산 복리 효과와 중도상환수수료 DSR 비교 가이드</title>
-      <link>https://pocketfinlab.com/posts/overdraft-account-vs-credit-loan-interest-calculation-comparison.html</link>
-      <guid>https://pocketfinlab.com/posts/overdraft-account-vs-credit-loan-interest-calculation-comparison.html</guid>
-      <description>2026년 직장인과 개인 사업자를 위한 마이너스 통장(유동성 한도대출)과 일반 만기일시 건별 신용대출의 금리 스프레드(약 0.3~0.5%p 차이) 원인, 실제 인출 일수 기반 일할 계산 이자 산출 공식, 미사용 한도에 대한 스트레스 DSR 2단계 차감 한도 규제 및 중도상환수수료 유불리 비교를 상세 해설합니다.</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>2026년 주택임대소득 분리과세 14% 세율 적용 기준 및 필요경비 감면율: 총수입금액 2천만원 이하와 종합과세 세액 비교 공식</title>
-      <link>https://pocketfinlab.com/posts/housing-rental-income-separate-taxation-14-percent.html</link>
-      <guid>https://pocketfinlab.com/posts/housing-rental-income-separate-taxation-14-percent.html</guid>
-      <description>2026년 주택임대소득 총수입금액 2,000만 원 이하 납세자의 분리과세 14% 단일세율 적용 기준, 등록 임대주택(필요경비율 60%·기본공제 400만 원) vs 미등록 주택(50%·200만 원) 세액 산정 공식, 종합과세와의 유불리 비교 및 건보료 피부양자 탈락 방지 전략을 상세 해설합니다.</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>2026년 긴급복지지원제도 생계지원금 수급 자격 및 금융재산 기준: 위기 사유 발생 시 1인 가구 71만원·4인 가구 183만원 선지원 후조사 신청법</title>
-      <link>https://pocketfinlab.com/posts/emergency-welfare-support-livelihood-grant-eligibility.html</link>
-      <guid>https://pocketfinlab.com/posts/emergency-welfare-support-livelihood-grant-eligibility.html</guid>
-      <description>2026년 보건복지부 긴급복지지원제도 생계지원금의 가구원수별 지급 단가(1인 가구 월 71만 3,100원, 4인 가구 월 183만 3,500원), 주소득자 실직·중한 질병 등 위기 사유 인정 기준, 기준 중위소득 75% 이하 소득 및 대도시 금융재산 600만 원 이하 요건, 선지원 후조사 원칙의 신속 신청 절차를 상세 해설합니다.</description>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
